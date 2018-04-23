@@ -1739,8 +1739,8 @@
         </ogo:property>
       </ogo:properties>
     </ogo:part>
-    <ogo:part>
 
+    <ogo:part>
       <ogo:name>Potentiometer</ogo:name>
       <ogo:symbol>resistor-var1</ogo:symbol>
       <ogo:description>Variable Resistor</ogo:description>
@@ -1768,16 +1768,8 @@
           <ogo:value>1k</ogo:value>
         </ogo:property>
         <ogo:property>
-          <ogo:name>Scale</ogo:name>
-          <ogo:value>0.5</ogo:value>
-        </ogo:property>
-        <ogo:property>
-          <ogo:name>Model</ogo:name>
-          <ogo:value>Potentiometer</ogo:value>
-        </ogo:property>
-        <ogo:property>
           <ogo:name>Template</ogo:name>
-          <ogo:value>R_@refdes %1 %2 %3 @res @scale @model</ogo:value>
+          <ogo:value>R_@refdes %1 %2 %3 @res</ogo:value>
         </ogo:property>
       </ogo:properties>
     </ogo:part>
