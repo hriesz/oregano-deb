@@ -1,0 +1,25 @@
+Basic Installation
+==================
+
+ In order to build and install you need Scons[1] >= 0.90
+
+Compilers and Options
+=====================
+
+ TODO
+
+Compiling For Multiple Architectures
+====================================
+
+ TODO
+
+Installation Names
+==================
+
+   By default, `scons install' will install the package's files in
+`/usr/local/bin', `/usr/local/man', etc.  You can specify an
+installation prefix other than `/usr/local' by giving `scons' the
+option `PREFIX=PATH'.
+
+   You can also change the destination directory by giving 'scons'
+the option 'DESTDIR=PATH' .

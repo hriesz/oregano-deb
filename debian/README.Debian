@@ -1,0 +1,10 @@
+Oregano for Debian
+------------------
+
+Even though Oregano has been around for a number of years, it's still under
+heavy development and things might not work as expected. 
+
+Regarding backwards compatibility, when opening oregano 0.23 files some wires
+might be out of place, and the probes will not be present.
+
+ -- Maximiliano Curia <maxy@gnuservers.com.ar>  Sun,  22 Jun 2005 21:19:11 -0300

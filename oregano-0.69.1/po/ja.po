@@ -1,0 +1,1596 @@
+# ja.po for oregano.
+# Copyright (C) 2000 Free Software Foundation, Inc.
+# Kazuya NUMATA <kaznum@gol.com>, 2000.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: oregano 0.19\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2006-09-11 02:36-0300\n"
+"PO-Revision-Date: 2000-11-16 20:00+0900\n"
+"Last-Translator: Satoru Sato <ssato@redhat.com>\n"
+"Language-Team: Japanese <translation@gnome.gr.jp>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=EUC-JP\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../data/dialogs/clamp-properties-dialog.glade2.h:1
+#, fuzzy
+msgid "<b>AC Analysis Options</b>"
+msgstr "オプション"
+
+#: ../data/dialogs/clamp-properties-dialog.glade2.h:2
+#, fuzzy
+msgid "<b>Type</b>"
+msgstr "一時"
+
+#: ../data/dialogs/clamp-properties-dialog.glade2.h:3
+#, fuzzy
+msgid "Current"
+msgstr "切り取り"
+
+#: ../data/dialogs/clamp-properties-dialog.glade2.h:4
+#, fuzzy
+msgid "Edit Clamp properties"
+msgstr "パーツプロパティを編集"
+
+#: ../data/dialogs/clamp-properties-dialog.glade2.h:5
+msgid "Imaginary part"
+msgstr ""
+
+#: ../data/dialogs/clamp-properties-dialog.glade2.h:6
+msgid "Magnitude"
+msgstr ""
+
+#: ../data/dialogs/clamp-properties-dialog.glade2.h:7
+#, fuzzy
+msgid "Phase"
+msgstr "貼り付け"
+
+#: ../data/dialogs/clamp-properties-dialog.glade2.h:8
+msgid "Real part"
+msgstr ""
+
+#: ../data/dialogs/clamp-properties-dialog.glade2.h:9
+msgid "Use decibel scale"
+msgstr ""
+
+#: ../data/dialogs/clamp-properties-dialog.glade2.h:10
+msgid "Voltage"
+msgstr ""
+
+#: ../data/dialogs/log-window.glade2.h:1
+msgid "Clear"
+msgstr "初期化"
+
+#: ../data/dialogs/log-window.glade2.h:2
+msgid "Oregano Log Window"
+msgstr "Oregano ログウィンドウ"
+
+#: ../data/dialogs/page-properties.glade2.h:1
+#, fuzzy
+msgid "<b>Alignment</b>"
+msgstr "一時"
+
+#: ../data/dialogs/page-properties.glade2.h:2
+#, fuzzy
+msgid "Center Horizontally"
+msgstr "水平方向に裏返す(_F)"
+
+#: ../data/dialogs/page-properties.glade2.h:3
+#, fuzzy
+msgid "Center Vertically"
+msgstr "垂直方向に裏返す(_F)"
+
+#: ../data/dialogs/page-properties.glade2.h:4
+msgid "Fit to page"
+msgstr ""
+
+#: ../data/dialogs/page-properties.glade2.h:5
+#, fuzzy
+msgid "Print Properties"
+msgstr "プロパティ"
+
+#: ../data/dialogs/part-browser.glade2.h:1
+#, fuzzy
+msgid "<b>Preview</b>"
+msgstr "フーリエ"
+
+#: ../data/dialogs/part-browser.glade2.h:2
+#, fuzzy
+msgid "Library:"
+msgstr "ライブラリ: "
+
+#: ../data/dialogs/part-browser.glade2.h:3 ../src/schematic-view-ui.h:360
+msgid "Parts"
+msgstr "パーツ"
+
+#: ../data/dialogs/part-browser.glade2.h:4
+msgid "Place"
+msgstr "配置"
+
+#: ../data/dialogs/part-browser.glade2.h:5
+msgid "Press this button to place the selected part"
+msgstr "選択パールを配置するにはこのボタンを押して下さい"
+
+#: ../data/dialogs/part-browser.glade2.h:6
+msgid "Search:"
+msgstr ""
+
+#: ../data/dialogs/part-browser.glade2.h:7
+msgid "Select which library to use"
+msgstr "ライブラリを選択して下さい"
+
+#: ../data/dialogs/part-properties-dialog.glade2.h:1
+#, fuzzy
+msgid "Part Properties"
+msgstr "パーツプロパティを編集"
+
+#: ../data/dialogs/plot-window.glade2.h:1
+#, fuzzy
+msgid "<b>Plot</b>"
+msgstr "ファイル形式"
+
+#: ../data/dialogs/plot-window.glade2.h:2
+#, fuzzy
+msgid "<b>Variables</b>"
+msgstr "変数"
+
+#: ../data/dialogs/plot-window.glade2.h:3
+msgid "Plot"
+msgstr "プロット"
+
+#: ../data/dialogs/plot-window.glade2.h:4
+#, fuzzy
+msgid "Region"
+msgstr "リドゥ"
+
+#: ../data/dialogs/plot-window.glade2.h:5
+msgid "Shift"
+msgstr ""
+
+#: ../data/dialogs/properties.glade2.h:1
+#: ../data/dialogs/textbox-properties-dialog.glade2.h:1
+msgid "    "
+msgstr ""
+
+#: ../data/dialogs/properties.glade2.h:2
+#, fuzzy
+msgid "<b>Comments</b>"
+msgstr "一時"
+
+#: ../data/dialogs/properties.glade2.h:3
+msgid "Author:"
+msgstr ""
+
+#: ../data/dialogs/properties.glade2.h:4 ../src/sheet/part-item.c:147
+msgid "Properties"
+msgstr "プロパティ"
+
+#: ../data/dialogs/properties.glade2.h:5
+#, fuzzy
+msgid "Title:"
+msgstr "ファイル(_F)"
+
+#: ../data/dialogs/settings.glade2.h:1
+msgid "\n"
+msgstr ""
+
+#: ../data/dialogs/settings.glade2.h:3
+#, fuzzy
+msgid "<b>Data Paths</b>"
+msgstr "実行プログラム"
+
+#: ../data/dialogs/settings.glade2.h:4
+msgid "<b>Engine</b>"
+msgstr ""
+
+#: ../data/dialogs/settings.glade2.h:5
+#, fuzzy
+msgid "<b>Executable Path</b>"
+msgstr "実行プログラム"
+
+#: ../data/dialogs/settings.glade2.h:6
+#, fuzzy
+msgid "<b>File Format</b>"
+msgstr "ファイル形式"
+
+#: ../data/dialogs/settings.glade2.h:7
+#, fuzzy
+msgid "<b>User Interface</b>"
+msgstr "ユーザインタフェース"
+
+#: ../data/dialogs/settings.glade2.h:8
+#, fuzzy
+msgid "Automatically show log windows after simulation"
+msgstr "シミュレーションの後で自動的にログウィンドウを表示"
+
+#: ../data/dialogs/settings.glade2.h:9
+msgid "Compress saved files"
+msgstr "保存ファイルを圧縮"
+
+#: ../data/dialogs/settings.glade2.h:10
+#, fuzzy
+msgid "Grid size[px]   "
+msgstr "グリッドサイズ [px]: "
+
+#: ../data/dialogs/settings.glade2.h:11
+#, fuzzy
+msgid "Library"
+msgstr "ライブラリ: "
+
+#: ../data/dialogs/settings.glade2.h:12
+msgid "Model"
+msgstr ""
+
+#: ../data/dialogs/settings.glade2.h:13
+msgid "Paths"
+msgstr "パス"
+
+#: ../data/dialogs/settings.glade2.h:14
+#, fuzzy
+msgid "Preferences"
+msgstr "設定(_P)"
+
+#: ../data/dialogs/settings.glade2.h:15
+#, fuzzy
+msgid "Realtime update of selection (slow)"
+msgstr "選択状況のリアルタイム更新(遅くなります)"
+
+#: ../data/dialogs/settings.glade2.h:16
+msgid "Remove"
+msgstr "消去"
+
+#: ../data/dialogs/settings.glade2.h:17
+#, fuzzy
+msgid "Select A File"
+msgstr "すべて選択(_a)"
+
+#: ../data/dialogs/settings.glade2.h:18
+msgid "Show the splash screen at application startup"
+msgstr ""
+
+#: ../data/dialogs/settings.glade2.h:19
+msgid "TODO : Add FINDPATH for Engines"
+msgstr ""
+
+#: ../data/dialogs/settings.glade2.h:20
+msgid "User Interface"
+msgstr "ユーザインタフェース"
+
+#: ../data/dialogs/sim-settings.glade2.h:1
+msgid "<b>AC</b>"
+msgstr ""
+
+#: ../data/dialogs/sim-settings.glade2.h:2
+#, fuzzy
+msgid "<b>DC Sweep</b>"
+msgstr "DC 挿引"
+
+#: ../data/dialogs/sim-settings.glade2.h:3
+#, fuzzy
+msgid "<b>Fourier</b>"
+msgstr "フーリエ"
+
+#: ../data/dialogs/sim-settings.glade2.h:4
+#, fuzzy
+msgid "<b>Transient</b>"
+msgstr "一時"
+
+#: ../data/dialogs/sim-settings.glade2.h:5
+msgid "Add new options"
+msgstr ""
+
+#: ../data/dialogs/sim-settings.glade2.h:6
+#, fuzzy
+msgid "Add to list"
+msgstr "リストに追加"
+
+#: ../data/dialogs/sim-settings.glade2.h:7
+#, fuzzy
+msgid "Analysis Options"
+msgstr "オプション"
+
+#: ../data/dialogs/sim-settings.glade2.h:8
+msgid "Analysis Parameters"
+msgstr ""
+
+#: ../data/dialogs/sim-settings.glade2.h:9
+msgid "DEC"
+msgstr ""
+
+#: ../data/dialogs/sim-settings.glade2.h:10
+msgid "Frequency"
+msgstr "周波数"
+
+#: ../data/dialogs/sim-settings.glade2.h:11
+msgid "LIN"
+msgstr ""
+
+#: ../data/dialogs/sim-settings.glade2.h:12
+msgid "List of outputs"
+msgstr "出力のリスト"
+
+#: ../data/dialogs/sim-settings.glade2.h:13
+msgid "OCT"
+msgstr ""
+
+#: ../data/dialogs/sim-settings.glade2.h:14
+#, fuzzy
+msgid "Points"
+msgstr "プリンタダイアログ"
+
+#: ../data/dialogs/sim-settings.glade2.h:15
+#, fuzzy
+msgid "Simulation Settings"
+msgstr "シミュレート設定"
+
+#: ../data/dialogs/sim-settings.glade2.h:16
+msgid "Source"
+msgstr "ソース"
+
+#: ../data/dialogs/sim-settings.glade2.h:17
+msgid "Start"
+msgstr "開始"
+
+#: ../data/dialogs/sim-settings.glade2.h:18
+#, fuzzy
+msgid "Step"
+msgstr "ステップ"
+
+#: ../data/dialogs/sim-settings.glade2.h:19
+msgid "Stop"
+msgstr "停止"
+
+#: ../data/dialogs/sim-settings.glade2.h:20
+msgid "Type"
+msgstr "タイプ"
+
+#: ../data/dialogs/sim-settings.glade2.h:21
+msgid "Use Initial Conditions"
+msgstr ""
+
+#: ../data/dialogs/simulation.glade2.h:1
+#, fuzzy
+msgid "Progress: None"
+msgstr "進行状況:"
+
+#: ../data/dialogs/simulation.glade2.h:2
+msgid "Simulation"
+msgstr "シミュレーション"
+
+#: ../data/dialogs/textbox-properties-dialog.glade2.h:2
+#, fuzzy
+msgid "<b>Text</b>"
+msgstr "一時"
+
+#: ../data/dialogs/textbox-properties-dialog.glade2.h:3
+#, fuzzy
+msgid "Text Properties"
+msgstr "プロパティ"
+
+#: ../data/dialogs/view-netlist.glade2.h:1
+#, fuzzy
+msgid "Netlist View"
+msgstr "ネットリストファイル名"
+
+#: ../data/dialogs/view-netlist.glade2.h:2 ../src/schematic-view-ui.h:161
+msgid "_Simulate"
+msgstr "シミュレート(_S)"
+
+#: ../src/sheet/part-item.c:147
+msgid "Edit the part's properties"
+msgstr "パーツプロパティの編集"
+
+#: ../src/sheet/part-item.c:616 ../src/sheet/part-item.c:765
+#: ../src/sheet/textbox-item.c:679 ../src/sim-settings.c:775
+#: ../src/settings.c:139 ../src/schematic-view.c:251
+#: ../src/schematic-view.c:317 ../src/schematic-view.c:2431 ../src/plot.c:434
+#: ../src/plot.c:689 ../src/part-browser.c:496 ../src/netlist-editor.c:309
+#, c-format
+msgid ""
+"The file %s could not be found. You might need to reinstall Oregano to fix "
+"this."
+msgstr ""
+
+#: ../src/sheet/part-item.c:618 ../src/sheet/part-item.c:626
+#: ../src/sheet/part-item.c:767 ../src/sheet/part-item.c:775
+msgid "Could not create part properties dialog."
+msgstr "パーツプロパティダイアログを生成できませんでした"
+
+#: ../src/sheet/sheet-item.c:307 ../src/schematic-view-ui.h:288
+msgid "Copy"
+msgstr "コピー"
+
+#: ../src/sheet/sheet-item.c:307
+msgid "Copy the object to the clipboard"
+msgstr "オブジェクトをクリップボードに貼り付け"
+
+#: ../src/sheet/sheet-item.c:310 ../src/schematic-view-ui.h:285
+msgid "Cut"
+msgstr "切り取り"
+
+#: ../src/sheet/sheet-item.c:310
+msgid "Cut the object to the clipboard"
+msgstr "オブジェクトをクリップボードに切り取り"
+
+#: ../src/sheet/sheet-item.c:313
+msgid "Delete"
+msgstr "消去"
+
+#: ../src/sheet/sheet-item.c:313
+msgid "Delete the object"
+msgstr "オブジェクトを消去"
+
+#: ../src/sheet/sheet-item.c:319
+msgid "Rotate"
+msgstr "回転"
+
+#: ../src/sheet/sheet-item.c:320
+msgid "Rotate the selected objects 90 degrees clockwise"
+msgstr "選択オブジェクトを時計周りに 90 度回転"
+
+#: ../src/sheet/textbox-item.c:99
+msgid "Edit..."
+msgstr "編集..."
+
+#: ../src/sheet/textbox-item.c:99
+msgid "Edit the text"
+msgstr "テキストを編集"
+
+#: ../src/sheet/textbox-item.c:596
+msgid "Label"
+msgstr "ラベル"
+
+#: ../src/sheet/textbox-item.c:681 ../src/sheet/textbox-item.c:690
+#, fuzzy
+msgid "Could not create textbox properties dialog"
+msgstr "パーツプロパティダイアログを生成できませんでした"
+
+#: ../src/simulation.c:102 ../src/simulation.c:109 ../src/simulation.c:115
+#, fuzzy
+msgid "Could not create simulation dialog"
+msgstr "シミュレートダイアログを生成できませんでした"
+
+#: ../src/simulation.c:150
+#, fuzzy, c-format
+msgid "Progress: <b>%s</b>"
+msgstr "進行状況:"
+
+#: ../src/simulation.c:201
+#, fuzzy
+msgid ""
+"<span weight=\"bold\" size=\"large\">The simulation was aborted due to an "
+"error.</span>\n"
+"\n"
+"Would you like to view the error log?"
+msgstr ""
+"シミュレーションはエラーのために中止されました。\n"
+"エラーログをご覧になりますか?"
+
+#: ../src/simulation.c:211
+#, fuzzy
+msgid "The simulation was aborted due to an error"
+msgstr "シミュレーションはエラーのために中止されました"
+
+#: ../src/sim-settings.c:229
+msgid "Add new option"
+msgstr ""
+
+#: ../src/sim-settings.c:777 ../src/sim-settings.c:784
+#: ../src/sim-settings.c:790
+#, fuzzy
+msgid "Could not create simulation settings dialog"
+msgstr "シミュレートダイアログを生成できませんでした"
+
+#: ../src/sim-settings.c:814
+msgid "Option"
+msgstr "オプション"
+
+#: ../src/sim-settings.c:816
+msgid "Value"
+msgstr "値"
+
+#: ../src/settings.c:141 ../src/settings.c:148 ../src/settings.c:154
+#, fuzzy
+msgid "Could not create settings dialog"
+msgstr "シミュレートダイアログを生成できませんでした"
+
+#: ../src/settings.c:215
+msgid "Engine executable not found"
+msgstr ""
+
+#: ../src/settings.c:216
+msgid "The engine is unable to locate the external program."
+msgstr ""
+
+#: ../src/schematic-view.c:254
+#, fuzzy
+msgid "Could not create properties dialog"
+msgstr "パーツプロパティダイアログを生成できませんでした"
+
+#: ../src/schematic-view.c:320
+#, fuzzy
+msgid "Could not create the page properties dialog"
+msgstr "パーツプロパティダイアログを生成できませんでした"
+
+#: ../src/schematic-view.c:383
+#, fuzzy
+msgid "Could not load file"
+msgstr "図式ファイル %s を保存できませんでした\n"
+
+#: ../src/schematic-view.c:410 ../src/schematic-view.c:1304
+#: ../src/schematic-view.c:1312
+msgid "Untitled.oregano"
+msgstr ""
+
+#: ../src/schematic-view.c:415
+#, fuzzy
+msgid "Could not save schematic file"
+msgstr "図式ファイル %s を保存できませんでした\n"
+
+#: ../src/schematic-view.c:765 ../src/netlist-editor.c:225
+#: ../src/netlist-editor.c:436
+#, fuzzy
+msgid "Could not create a netlist"
+msgstr "パーツブラウザを生成できませんでした"
+
+#: ../src/schematic-view.c:768 ../src/netlist-editor.c:229
+#: ../src/netlist-editor.c:439
+msgid "An unexpected error has occurred"
+msgstr ""
+
+#: ../src/schematic-view.c:1313
+msgid "Untitled.netlist"
+msgstr ""
+
+#: ../src/schematic-view.c:1504
+#, fuzzy, c-format
+msgid ""
+"<span weight=\"bold\" size=\"large\">Save changes to schematic %s before "
+"closing?</span>\n"
+"\n"
+"If you don't save, all changes since you last saved will be permanently lost."
+msgstr ""
+"シミュレーションはエラーのために中止されました。\n"
+"エラーログをご覧になりますか?"
+
+#: ../src/schematic-view.c:1516
+msgid "Close _without Saving"
+msgstr ""
+
+#: ../src/schematic-view.c:2434 ../src/schematic-view.c:2445
+#, fuzzy
+msgid "Could not create the log window"
+msgstr "プロットウィンドウを生成できませんでした"
+
+#: ../src/schematic-view-ui.h:38
+msgid "_New"
+msgstr "新規(_N)"
+
+#: ../src/schematic-view-ui.h:38 ../src/schematic-view-ui.h:264
+msgid "Create a new schematic"
+msgstr "新規図式を生成"
+
+#: ../src/schematic-view-ui.h:47
+#, fuzzy
+msgid "Page Properties"
+msgstr "パーツプロパティを編集"
+
+#: ../src/schematic-view-ui.h:48
+#, fuzzy
+msgid "Set print properties"
+msgstr "パーツプロパティを編集"
+
+#: ../src/schematic-view-ui.h:56 ../src/print.c:367 ../src/plot.c:150
+#: ../src/netlist-editor.c:193
+#, fuzzy
+msgid "Print Preview"
+msgstr "試写"
+
+#: ../src/schematic-view-ui.h:57
+#, fuzzy
+msgid "Preview the schematic before printing"
+msgstr "図式のプロパティを変更"
+
+#: ../src/schematic-view-ui.h:65
+msgid "Schematic _Properties..."
+msgstr "図式プロパティ(_P)..."
+
+#: ../src/schematic-view-ui.h:66
+msgid "Modify the schematic's properties"
+msgstr "図式のプロパティを変更"
+
+#: ../src/schematic-view-ui.h:95
+msgid "_Delete"
+msgstr "消去(_D)"
+
+#: ../src/schematic-view-ui.h:96
+msgid "Delete the selection"
+msgstr "選択されたものを消去"
+
+#: ../src/schematic-view-ui.h:102
+msgid "_Rotate"
+msgstr "回転(_R)"
+
+#: ../src/schematic-view-ui.h:103
+msgid "Rotate the selection clockwise"
+msgstr "選択されたものを時計方向に回転"
+
+#: ../src/schematic-view-ui.h:109
+#, fuzzy
+msgid "Flip _horizontally"
+msgstr "選択されたものを水平方向に裏返す"
+
+#: ../src/schematic-view-ui.h:110
+msgid "Flip the selection horizontally"
+msgstr "選択されたものを水平方向に裏返す"
+
+#: ../src/schematic-view-ui.h:116
+#, fuzzy
+msgid "Flip _vertically"
+msgstr "選択されたものを垂直方向に裏返す"
+
+#: ../src/schematic-view-ui.h:117
+msgid "Flip the selection vertically"
+msgstr "選択されたものを垂直方向に裏返す"
+
+#: ../src/schematic-view-ui.h:124
+#, fuzzy
+msgid "Select _all"
+msgstr "すべての選択を解除(_D)"
+
+#: ../src/schematic-view-ui.h:125
+msgid "Select all objects on the sheet"
+msgstr "シート上のすべてのオブジェクトを選択"
+
+#: ../src/schematic-view-ui.h:131
+#, fuzzy
+msgid "Deselect a_ll"
+msgstr "すべての選択を解除(_D)"
+
+#: ../src/schematic-view-ui.h:132
+msgid "Deselect the selected objects"
+msgstr "オブジェクトの選択を解除"
+
+#: ../src/schematic-view-ui.h:140
+#, fuzzy
+msgid "_Object Properties..."
+msgstr "オブジェクトのプロパティ(_P)..."
+
+#: ../src/schematic-view-ui.h:141
+msgid "Modify the object's properties"
+msgstr "オブジェクトのプロパティを変更"
+
+#: ../src/schematic-view-ui.h:146
+msgid "Simulation S_ettings..."
+msgstr "シミュレート設定(_e)"
+
+#: ../src/schematic-view-ui.h:147
+msgid "Edit the simulation settings"
+msgstr "シミュレート設定を編集"
+
+#: ../src/schematic-view-ui.h:162
+msgid "Run a simulation"
+msgstr "シミュレーションを実行"
+
+#: ../src/schematic-view-ui.h:169
+msgid "_Generate netlist"
+msgstr "一般ネットリスト(_G)"
+
+#: ../src/schematic-view-ui.h:170
+msgid "Generate a netlist"
+msgstr "ネットリストを生成"
+
+#: ../src/schematic-view-ui.h:177
+msgid "50%"
+msgstr ""
+
+#: ../src/schematic-view-ui.h:178
+msgid "Set the zoom factor to 50%"
+msgstr "拡大率を 50 % に設定"
+
+#: ../src/schematic-view-ui.h:179
+msgid "75%"
+msgstr ""
+
+#: ../src/schematic-view-ui.h:180
+msgid "Set the zoom factor to 75%"
+msgstr "拡大率を 75 % に設定"
+
+#. GNOMEUIINFO_ITEM_NONE(N_("50%"),
+#. N_("Set the zoom factor to 50%"), plot_zoom_50_cmd),
+#. GNOMEUIINFO_ITEM_NONE(N_("75%"),
+#. N_("Set the zoom factor to 75%"), plot_zoom_75_cmd),
+#: ../src/schematic-view-ui.h:181 ../src/plot.c:167
+msgid "100%"
+msgstr ""
+
+#: ../src/schematic-view-ui.h:182 ../src/plot.c:168
+msgid "Set the zoom factor to 100%"
+msgstr "拡大率を 100 % に設定"
+
+#: ../src/schematic-view-ui.h:184
+msgid "125%"
+msgstr ""
+
+#: ../src/schematic-view-ui.h:185
+msgid "Set the zoom factor to 125%"
+msgstr "拡大率を 125 % に設定"
+
+#: ../src/schematic-view-ui.h:186
+msgid "150%"
+msgstr ""
+
+#: ../src/schematic-view-ui.h:187
+msgid "Set the zoom factor to 150%"
+msgstr "拡大率を 150 % に設定"
+
+#: ../src/schematic-view-ui.h:196
+msgid "Zoom"
+msgstr "拡大"
+
+#: ../src/schematic-view-ui.h:202
+msgid "_Log"
+msgstr "ログ(_L)"
+
+#: ../src/schematic-view-ui.h:202
+msgid "View the latest simulation log"
+msgstr "最新のシミュレートログを見る"
+
+#: ../src/schematic-view-ui.h:205
+msgid "_Node labels"
+msgstr ""
+
+#: ../src/schematic-view-ui.h:205
+#, fuzzy
+msgid "Show or hide node labels"
+msgstr "パーツブラウザを表示(隠す)"
+
+#: ../src/schematic-view-ui.h:207
+#, fuzzy
+msgid "N_etlist"
+msgstr "ネットリストファイル名"
+
+#: ../src/schematic-view-ui.h:208
+#, fuzzy
+msgid "View the circuit netlist"
+msgstr "最新のシミュレートネットリストを見る"
+
+#: ../src/schematic-view-ui.h:240
+msgid "_Contents"
+msgstr ""
+
+#: ../src/schematic-view-ui.h:240
+msgid "Show program help"
+msgstr ""
+
+#: ../src/schematic-view-ui.h:254
+msgid "_Tools"
+msgstr "ツール(_T)"
+
+#: ../src/schematic-view-ui.h:264
+msgid "New"
+msgstr "新規"
+
+#: ../src/schematic-view-ui.h:267
+msgid "Open"
+msgstr "開く"
+
+#: ../src/schematic-view-ui.h:267
+msgid "Open an existing schematic"
+msgstr "既存の図式を開く"
+
+#: ../src/schematic-view-ui.h:270
+msgid "Save"
+msgstr "保存"
+
+#: ../src/schematic-view-ui.h:270
+msgid "Save the schematic"
+msgstr "図式を保存"
+
+#: ../src/schematic-view-ui.h:285
+msgid "Cut the selection to the clipboard"
+msgstr "選択されたものをクリップボードに切り取り"
+
+#: ../src/schematic-view-ui.h:288
+msgid "Copy the selection to the clipboard"
+msgstr "選択されたものをクリップボードにコピー"
+
+#: ../src/schematic-view-ui.h:291 ../src/schematic-view-ui.h:404
+msgid "Paste"
+msgstr "貼り付け"
+
+#: ../src/schematic-view-ui.h:291
+#, fuzzy
+msgid "Paste the clipboard"
+msgstr "クリップボードから貼り付け"
+
+#: ../src/schematic-view-ui.h:301
+msgid "Arrow"
+msgstr "矢印"
+
+#: ../src/schematic-view-ui.h:302
+msgid "Select, move and modify objects"
+msgstr "オブジェクトを選択し、移動、変更"
+
+#: ../src/schematic-view-ui.h:307
+msgid "Text"
+msgstr "テキスト"
+
+#: ../src/schematic-view-ui.h:308
+msgid "Put text on the schematic"
+msgstr "図式にテキストを置く"
+
+#: ../src/schematic-view-ui.h:313
+msgid "Wires"
+msgstr "ワイア"
+
+#: ../src/schematic-view-ui.h:314
+msgid "Draw wires"
+msgstr "ワイアを描画"
+
+#: ../src/schematic-view-ui.h:330
+msgid "Add Voltage Clamp"
+msgstr ""
+
+#: ../src/schematic-view-ui.h:331
+msgid "Add a Voltage test clamp"
+msgstr ""
+
+#: ../src/schematic-view-ui.h:336
+msgid "Simulate"
+msgstr "シミュレート"
+
+#: ../src/schematic-view-ui.h:337
+msgid "Run a simulation for the current schematic"
+msgstr "現在の図式をシミュレート"
+
+#: ../src/schematic-view-ui.h:342 ../src/schematic-view-ui.h:343
+msgid "Simulation settings"
+msgstr "シミュレート設定"
+
+#: ../src/schematic-view-ui.h:361
+msgid "Show or hide the part browser"
+msgstr "パーツブラウザを表示(隠す)"
+
+#: ../src/schematic-view-ui.h:366
+msgid "Grid"
+msgstr "グリッド"
+
+#: ../src/schematic-view-ui.h:367
+msgid "Turn on/off the grid"
+msgstr "グリッドを表示(非表示)"
+
+#: ../src/schematic-view-ui.h:372 ../src/schematic-view-ui.h:373
+msgid "Zoom in"
+msgstr "拡大"
+
+#: ../src/schematic-view-ui.h:378 ../src/schematic-view-ui.h:379
+msgid "Zoom out"
+msgstr "縮小"
+
+#: ../src/schematic-view-ui.h:405
+msgid "Paste the contents of the clipboard to the sheet"
+msgstr "シートにクリップボードから貼り付け"
+
+#: ../src/print.c:297
+#, fuzzy
+msgid "Print"
+msgstr "プリンタダイアログ"
+
+#: ../src/print.c:304
+#, fuzzy
+msgid "Pages"
+msgstr "パス"
+
+#: ../src/print.c:339
+msgid "Can't get paper info! .. getting default!"
+msgstr ""
+
+#: ../src/print.c:353
+#, fuzzy
+msgid "Could not create font for printing."
+msgstr "フォントを生成できませんでした"
+
+#: ../src/print.c:372
+msgid "Printing failed."
+msgstr ""
+
+#: ../src/plot.c:61 ../src/plot.c:62
+msgid "Sans 10"
+msgstr ""
+
+#: ../src/plot.c:63
+msgid "Sans 8"
+msgstr ""
+
+#: ../src/plot.c:151
+#, fuzzy
+msgid "Preview the plot before printing"
+msgstr "図式のプロパティを変更"
+
+#: ../src/plot.c:153
+msgid "Export plot"
+msgstr ""
+
+#: ../src/plot.c:154
+msgid "Show the export menu"
+msgstr ""
+
+#: ../src/plot.c:155
+#, fuzzy
+msgid "Add Function"
+msgstr "一時"
+
+#: ../src/plot.c:156
+msgid "Add new function to the graph"
+msgstr ""
+
+#: ../src/plot.c:180
+msgid "_Preferences..."
+msgstr "設定(_P)"
+
+#: ../src/plot.c:182
+msgid "Show crosshairs"
+msgstr ""
+
+#: ../src/plot.c:183
+#, fuzzy
+msgid "_Zoom"
+msgstr "拡大"
+
+#: ../src/plot.c:190
+#, fuzzy
+msgid "Schematic Plot"
+msgstr "図式プロパティ(_P)..."
+
+#: ../src/plot.c:196
+msgid "_File"
+msgstr "ファイル(_F)"
+
+#: ../src/plot.c:197
+msgid "_Plot"
+msgstr "プロット(_P)"
+
+#. Simulation failed?
+#: ../src/plot.c:330
+msgid "The simulation produced no data!!\n"
+msgstr ""
+
+#: ../src/plot.c:340 ../src/plot.c:574
+#, fuzzy, c-format
+msgid "Plot - %s"
+msgstr "プロット"
+
+#: ../src/plot.c:349
+msgid "Nodes"
+msgstr ""
+
+#: ../src/plot.c:352 ../src/plot.c:636
+#, fuzzy
+msgid "Functions"
+msgstr "一時"
+
+#: ../src/plot.c:424
+#, fuzzy
+msgid "Oregano - Plot"
+msgstr "Oregano ログウィンドウ"
+
+#: ../src/plot.c:436 ../src/plot.c:443
+msgid "Could not create plot window."
+msgstr "プロットウィンドウを生成できませんでした"
+
+#: ../src/plot.c:659
+msgid "TRANSFER"
+msgstr ""
+
+#: ../src/plot.c:691 ../src/plot.c:698
+#, fuzzy
+msgid "Could not create plot export window."
+msgstr "プロットウィンドウを生成できませんでした"
+
+#. if (gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (export_png)))
+#. format = GTK_CAIRO_PLOT_VIEW_SAVE_PNG;
+#. else
+#. format = GTK_CAIRO_PLOT_VIEW_SAVE_PS;
+#: ../src/plot.c:719
+#, fuzzy
+msgid "Save PNG"
+msgstr "保存"
+
+#: ../src/part-browser.c:135 ../src/part-browser.c:614
+msgid ""
+"Gtk version 2.2 does not support GtkTreeModelFilter...\n"
+"Filtering disable!"
+msgstr ""
+
+#: ../src/part-browser.c:187 ../src/part-browser.c:401
+msgid "Unable to load required part"
+msgstr ""
+
+#: ../src/part-browser.c:499 ../src/part-browser.c:507
+#, fuzzy
+msgid "Could not create part browser"
+msgstr "パーツブラウザを生成できませんでした"
+
+#: ../src/oregano-config.c:123
+#, c-format
+msgid "Loading %s ..."
+msgstr ""
+
+#: ../src/oregano-config.c:164
+#, fuzzy, c-format
+msgid "Could not read the parts library: %s "
+msgstr "パーツブラウザを生成できませんでした"
+
+#: ../src/oregano-config.c:166
+#, fuzzy
+msgid ""
+"The file is probably corrupt. Please reinstall the parts\n"
+"library or Oregano and try again."
+msgstr ""
+"パーツライブラリをみつけられませんでした: %s\n"
+"\n"
+"ファイルはおそらくこわれています。パーツライブラリか\n"
+"Oregano を再インストールして再試行して下さい。"
+
+#: ../src/engines/netlist.c:436
+msgid "No ground node. Aborting.\n"
+msgstr "グラウンドノードがありません。中止します。\n"
+
+#: ../src/engines/netlist.c:441
+#, fuzzy
+msgid ""
+"Possibly due to a faulty circuit schematic. Please check that\n"
+"you have a ground node and try again."
+msgstr ""
+"ネットリストを生成できませんでした。おそらく\n"
+"不正な回路図のせいです。グラウンドノードがある\n"
+"ことを確認し、再試行して下さい。"
+
+#: ../src/engines/netlist.c:450
+#, fuzzy
+msgid "No test clamps found. Aborting.\n"
+msgstr "グラウンドノードがありません。中止します。\n"
+
+#: ../src/engines/netlist.c:455
+#, fuzzy
+msgid ""
+"Possibly due to a faulty circuit schematic. Please check that\n"
+"you have one o more test clamps and try again."
+msgstr ""
+"ネットリストを生成できませんでした。おそらく\n"
+"不正な回路図のせいです。グラウンドノードがある\n"
+"ことを確認し、再試行して下さい。"
+
+#: ../src/engines/gnucap.c:299
+msgid "### Too few or none analysis found ###\n"
+msgstr ""
+
+#: ../src/engines/gnucap.c:366
+msgid "Unable to execute GnuCap."
+msgstr ""
+
+#: ../src/engines/gnucap.c:383
+msgid "None"
+msgstr ""
+
+#: ../src/engines/gnucap.c:586
+msgid "time"
+msgstr ""
+
+#: ../src/engines/gnucap.c:591 ../src/engines/gnucap.c:601
+#, fuzzy
+msgid "voltage"
+msgstr "回転"
+
+#: ../src/engines/gnucap.c:596
+#, fuzzy
+msgid "frequency"
+msgstr "周波数"
+
+#: ../src/engines/gnucap.c:645
+msgid "Unknown analysis"
+msgstr ""
+
+#: ../src/engines/gnucap.c:693
+#, fuzzy
+msgid "abort"
+msgstr "開始"
+
+#: ../src/engines/engine.c:32
+msgid "Operating Point"
+msgstr ""
+
+#: ../src/engines/engine.c:33
+#, fuzzy
+msgid "Transient Analysis"
+msgstr "一時"
+
+#: ../src/engines/engine.c:34
+msgid "DC transfer characteristic"
+msgstr ""
+
+#: ../src/engines/engine.c:35
+#, fuzzy
+msgid "AC Analysis"
+msgstr "一時"
+
+#: ../src/engines/engine.c:36
+#, fuzzy
+msgid "Transfer Function"
+msgstr "一時"
+
+#: ../src/engines/engine.c:37
+#, fuzzy
+msgid "Distortion Analysis"
+msgstr "一時"
+
+#: ../src/engines/engine.c:38
+#, fuzzy
+msgid "Noise Analysis"
+msgstr "一時"
+
+#: ../src/engines/engine.c:39
+msgid "Pole-Zero Analysis"
+msgstr ""
+
+#: ../src/engines/engine.c:40
+#, fuzzy
+msgid "Sensitivity Analysis"
+msgstr "一時"
+
+#: ../src/engines/engine.c:41
+#, fuzzy
+msgid "Unknown Analysis"
+msgstr "一時"
+
+#: ../src/netlist-editor.c:172
+#, fuzzy, c-format
+msgid "Netlist for %s"
+msgstr "ネットリストファイル名"
+
+#: ../src/netlist-editor.c:173
+#, c-format
+msgid "Author : %s"
+msgstr ""
+
+#: ../src/netlist-editor.c:186
+msgid "Page %N of %Q"
+msgstr ""
+
+#: ../src/netlist-editor.c:238 ../src/netlist-editor.c:274
+#, c-format
+msgid "The file %s could not be saved"
+msgstr ""
+
+#: ../src/netlist-editor.c:239 ../src/netlist-editor.c:275
+#, fuzzy
+msgid "Could not save temporary netlist file"
+msgstr "図式ファイル %s を保存できませんでした\n"
+
+#: ../src/netlist-editor.c:311
+#, fuzzy
+msgid "Could not create the netlist dialog"
+msgstr "パーツプロパティダイアログを生成できませんでした"
+
+#. gettext support
+#: ../src/netlist-editor.c:390
+#, c-format
+msgid "The file %s could not be found."
+msgstr ""
+
+#: ../src/netlist-editor.c:391
+#, fuzzy
+msgid "Could not find the required file"
+msgstr "要請されたファイルをみつけられませんでした: %s"
+
+#: ../src/main.c:107
+msgid "Enables some debugging functions"
+msgstr "デバッグ関数を有効にします"
+
+#: ../src/main.c:107
+msgid "LEVEL"
+msgstr "レベル"
+
+#: ../src/main.c:132
+msgid ""
+"You seem to be running Oregano without\n"
+"having it installed properly on your system.\n"
+"\n"
+"Please install Oregano and try again."
+msgstr ""
+"あなたは適切にインストールせずに Oregano を\n"
+"実行しているようです。\n"
+"\n"
+"Oregano を再インストールして再実行して下さい。"
+
+#: ../src/main.c:155
+msgid ""
+"Could not find a parts library.\n"
+"\n"
+"This is probably due to a faulty installation\n"
+"of Oregano. Please check your installation."
+msgstr ""
+"パーツライブラリをみつけられませんでした。\n"
+"\n"
+"おそらく Oregano を適切にインストールしていない\n"
+"ためです。インストールをチェックして下さい。"
+
+#: ../src/main.c:212
+msgid "Welcome to Oregano"
+msgstr ""
+
+#: ../src/load-schematic.c:261
+msgid "Bad file format."
+msgstr ""
+
+#: ../src/load-schematic.c:271
+msgid "Unknown parser error."
+msgstr ""
+
+#: ../src/load-library.c:149
+#, c-format
+msgid "Could not find the requested symbol: %s\n"
+msgstr "要請されたシンボルをみつけられませんでした: %s\n"
+
+#: ../src/load-library.c:165
+#, c-format
+msgid "Could not find the requested part: %s\n"
+msgstr "要請されたパーツはみつけられませんでした: %s\n"
+
+#: ../src/file.c:50 ../src/file.c:90
+#, fuzzy
+msgid "Oregano Files"
+msgstr "ファイルを開く"
+
+#: ../src/file.c:52 ../src/file.c:92
+msgid "All Files"
+msgstr ""
+
+#: ../src/file.c:55
+#, fuzzy
+msgid "Open File"
+msgstr "ファイルを開く"
+
+#: ../src/file.c:95
+#, fuzzy
+msgid "Save File"
+msgstr "保存"
+
+#: ../src/file.c:145
+#, fuzzy
+msgid "Netlist File"
+msgstr "ネットリストファイル名"
+
+#: ../src/file.c:221
+msgid "Open file"
+msgstr "ファイルを開く"
+
+#: ../src/file.c:271
+msgid "Save schematic as"
+msgstr "図式を別名で保存"
+
+#: ../src/file.c:336
+msgid "Netlist filename"
+msgstr "ネットリストファイル名"
+
+#: ../src/dialogs.c:126
+msgid ""
+"(c) 2003-2006 LUGFi\n"
+"(c) 1999-2001 Richard Hult"
+msgstr ""
+
+#: ../src/dialogs.c:141
+msgid "Schematic capture and circuit simulation.\n"
+msgstr ""
+
+#: ../src/model/schematic.c:584
+#, c-format
+msgid "File %s does not exists."
+msgstr ""
+
+#: ../src/model/schematic.c:592 ../src/model/schematic.c:630
+#, c-format
+msgid "Unknown file format for %s."
+msgstr ""
+
+#: ../src/model/schematic.c:611
+msgid "Load fails!."
+msgstr ""
+
+#: ../src/plot-add-function.c:48
+#, c-format
+msgid ""
+"The file %s could not be found. You might need to reinstall Oregano to fix "
+"this"
+msgstr ""
+
+#: ../src/plot-add-function.c:50 ../src/plot-add-function.c:57
+#, fuzzy
+msgid "Could not create plot window"
+msgstr "プロットウィンドウを生成できませんでした"
+
+#, fuzzy
+#~ msgid "_View netlist"
+#~ msgstr "ネットリスト(_N)"
+
+#, fuzzy
+#~ msgid "View a netlist"
+#~ msgstr "ネットリストを生成"
+
+#~ msgid "View plot"
+#~ msgstr "プロットを表示"
+
+#~ msgid "View plot "
+#~ msgstr "プロットを表示 "
+
+#, fuzzy
+#~ msgid "Problem in transient analysis"
+#~ msgstr "一時"
+
+#, fuzzy
+#~ msgid "Could not find the simulation executable"
+#~ msgstr "シミュレートダイアログを生成できませんでした"
+
+#, fuzzy
+#~ msgid "This probably means that you have not configured Oregano properly."
+#~ msgstr ""
+#~ "シミュレート実行プログラムをみつけられませんでした: %s\n"
+#~ "\n"
+#~ "おそらく Oregano が適切に設定されていません。設定メニューを\n"
+#~ "選択し、シミュレート実行プログラム(例えば spice)を指定して\n"
+#~ "下さい"
+
+#, fuzzy
+#~ msgid "You have not entered a simulation executable"
+#~ msgstr "シミュレートダイアログを生成できませんでした"
+
+#, fuzzy
+#~ msgid ""
+#~ "Please choose Settings and specify which program to use for simulations."
+#~ msgstr ""
+#~ "シミュレート実行プログラムをみつけられませんでした。\n"
+#~ "設定メニューを選択し、シミュレート実行プログラムを\n"
+#~ "指定して下さい"
+
+#~ msgid "Name: "
+#~ msgstr "名前: "
+
+#~ msgid "Value: "
+#~ msgstr "値: "
+
+#, fuzzy
+#~ msgid "Parser"
+#~ msgstr "貼り付け"
+
+#, fuzzy
+#~ msgid "<b>Format</b>"
+#~ msgstr "ファイル形式"
+
+#, fuzzy
+#~ msgid "<b>Size</b>"
+#~ msgstr "一時"
+
+#, fuzzy
+#~ msgid ""
+#~ "<span weight=\"bold\" size=\"x-large\">Could not find the required file:\n"
+#~ "</span>%s\n"
+#~ msgstr "要請されたファイルをみつけられませんでした: %s"
+
+#~ msgid " "
+#~ msgstr " "
+
+#, fuzzy
+#~ msgid ""
+#~ "<span weight=\"bold\" size=\"x-large\">Could not find the required file:</"
+#~ "span>\n"
+#~ "%s"
+#~ msgstr "要請されたファイルをみつけられませんでした: %s"
+
+#, fuzzy
+#~ msgid ""
+#~ "<span weight=\"bold\" size=\"x-large\">Could not load file.</span>\n"
+#~ "\n"
+#~ "%s"
+#~ msgstr "要請されたファイルをみつけられませんでした: %s"
+
+#, fuzzy
+#~ msgid ""
+#~ "<span weight=\"bold\" size=\"x-large\">Could not create a netlist</span>\n"
+#~ "\n"
+#~ "%s"
+#~ msgstr "要請されたファイルをみつけられませんでした: %s"
+
+#, fuzzy
+#~ msgid "<span weight=\"bold\">Could not create log window.</span>"
+#~ msgstr "ログウィンドウを生成できませんでした"
+
+#, fuzzy
+#~ msgid ""
+#~ "<span size=\"x-large\" weight=\"bold\">Could not create settings dialog.</"
+#~ "span>"
+#~ msgstr "設定ダイアログを生成できませんでした"
+
+#, fuzzy
+#~ msgid ""
+#~ "<span size=\"x-large\" weigth=\"bold\">Transient analysis</span>\n"
+#~ "\n"
+#~ "Start time must be less than stop time."
+#~ msgstr ""
+#~ "一時解析:\n"
+#~ "\n"
+#~ "開始時間は停止時間よりも小さくなければなりません"
+
+#, fuzzy
+#~ msgid ""
+#~ "<span size=\"x-large\" weight=\"bold\">Could not create simulation "
+#~ "settings dialog.</span>"
+#~ msgstr "シミュレート設定ダイアログを生成できませんでした"
+
+#, fuzzy
+#~ msgid ""
+#~ "<span weight=\"bold\" size=\"x-large\">Could not create simulation dialog."
+#~ "</span>"
+#~ msgstr "シミュレートダイアログを生成できませんでした"
+
+#, fuzzy
+#~ msgid ""
+#~ "<span weight=\"bold\">Could not find the required file:\n"
+#~ "</span>%s\n"
+#~ msgstr "要請されたファイルをみつけられませんでした: %s"
+
+#, fuzzy
+#~ msgid ""
+#~ "<span weight=\"bold\">Could not create textbox properties dialog.</span>"
+#~ msgstr "テキストボックスプロパティダイアログを生成できませんでした"
+
+#, fuzzy
+#~ msgid ""
+#~ "<span weight=\"bold\" size=\"x-large\">Could not save temporary netlist "
+#~ "file:\n"
+#~ "</span>%s\n"
+#~ msgstr "要請されたファイルをみつけられませんでした: %s"
+
+#, fuzzy
+#~ msgid "window"
+#~ msgstr "アンドゥ"
+
+#, fuzzy
+#~ msgid ""
+#~ "<span size=\"x-large\" weight=\"bold\">Could not create simulation "
+#~ "settings dialog.</sapn>"
+#~ msgstr "シミュレート設定ダイアログを生成できませんでした"
+
+#, fuzzy
+#~ msgid "Oregano"
+#~ msgstr "ファイルを開く"
+
+#, fuzzy
+#~ msgid "Set the zoom factor to 200%"
+#~ msgstr "拡大率を 100 % に設定"
+
+#, fuzzy
+#~ msgid ""
+#~ "<span weight=\"bold\" size=\"x-large\">Could not create a netlist</span>\n"
+#~ "\n"
+#~ "Possibly dueto a faulty circuit schematic. Please check that\n"
+#~ "you have one o more test clamps and try again."
+#~ msgstr ""
+#~ "ネットリストを生成できませんでした。おそらく\n"
+#~ "不正な回路図のせいです。グラウンドノードがある\n"
+#~ "ことを確認し、再試行して下さい。"
+
+#, fuzzy
+#~ msgid "Library:   "
+#~ msgstr "ライブラリ: "
+
+#~ msgid "Preview"
+#~ msgstr "試写"
+
+#~ msgid "part_browser"
+#~ msgstr "パーツブラウザ"
+
+#~ msgid "Edit part properties"
+#~ msgstr "パーツプロパティを編集"
+
+#, fuzzy
+#~ msgid "label"
+#~ msgstr "ラベル"
+
+#, fuzzy
+#~ msgid ""
+#~ "<span weight=\"bold\" size=\"x-large\">Could not find the required file:\n"
+#~ "</span%s\n"
+#~ ">"
+#~ msgstr "要請されたファイルをみつけられませんでした: %s"
+
+#~ msgid "_Close"
+#~ msgstr "閉じる(_C)"
+
+#, fuzzy
+#~ msgid "Print Schematic"
+#~ msgstr "図式を保存"
+
+#, fuzzy
+#~ msgid "Print preview"
+#~ msgstr "試写"
+
+#, fuzzy
+#~ msgid "Paper Size"
+#~ msgstr "プロパティ"
+
+#~ msgid "Warning"
+#~ msgstr "警告"
+
+#~ msgid "Schematic %s has unsaved changes, save them?"
+#~ msgstr "図式 %s は変更が未保存です。保存しますか?"
+
+#~ msgid "Schematic has unsaved changes, save them?"
+#~ msgstr "図式は変更が未保存です。保存しますか?"
+
+#~ msgid "View the latest plot"
+#~ msgstr "最新のプロットを見る"
+
+#~ msgid "Voltmeters"
+#~ msgstr "電圧計"
+
+#~ msgid "Enable/disable voltmeters"
+#~ msgstr "電圧計を有効化/無効化"
+
+#, fuzzy
+#~ msgid "Default"
+#~ msgstr "デフォルト\n"
+
+#~ msgid "Spice Path: "
+#~ msgstr "Spice パス: "
+
+#~ msgid "Data"
+#~ msgstr "日時"
+
+#~ msgid "Library Path: "
+#~ msgstr "ライブラリパス: "
+
+#~ msgid "Model Path: "
+#~ msgstr "モデルパス: "
+
+#~ msgid "Start time: "
+#~ msgstr "開始時間: "
+
+#~ msgid "Stop time: "
+#~ msgstr "停止時間: "
+
+#~ msgid "Step size: "
+#~ msgstr "ステップサイズ: "
+
+#~ msgid "Enable"
+#~ msgstr "有効化"
+
+#~ msgid "Use"
+#~ msgstr "使用"
+
+#~ msgid "enable"
+#~ msgstr "有効化"
+
+#~ msgid "stop"
+#~ msgstr "停止"
+
+#~ msgid "New Value"
+#~ msgstr "新規値"
+
+#~ msgid "Accept"
+#~ msgstr "受諾"
+
+#~ msgid "Edit text label"
+#~ msgstr "テキストラベルを編集"
+
+#~ msgid "An electrical engineering tool.\n"
+#~ msgstr "電気工学ツール\n"
+
+#~ msgid ""
+#~ "To place the selected part, either press the 'Place' button, press the "
+#~ "key 'l', or drag the preview to the sheet."
+#~ msgstr ""
+#~ "選択パーツを配置するには '配置'ボタンを押すか、キー'l'を押すか、シート\n"
+#~ "を'試写'にドラッグして下さい。"

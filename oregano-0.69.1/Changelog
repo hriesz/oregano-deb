@@ -1,0 +1,1396 @@
+2009-06-19  Ricardo Markiewicz <gazer.arg@gmail.com>
+
+  * src/netlist-editor.c: Append OREGANO_LANGDIR in the GtkLanguageManager
+  search path
+
+2009-06-16  Ricardo Markiewicz <gazer.arg@gmail.com>
+
+  * SConstruct, data/SConscript, data/netlist.lang, src/SConscript,
+  src/netlist-editor.c, src/netlist-editor.h: Upgrade GtkSourceView to version
+  2.0  Closes #1332.
+
+  * data/dialogs/view-netlist.glade2: Decrease default window size when viewing
+  a netlist
+
+2009-06-11  Ricardo Markiewicz <gazer.arg@gmail.com>
+
+  * src/main.c, src/model/schematic.c, src/model/schematic.h,
+  src/schematic-view.c: Support for grayscale export of Schematics.
+
+  * src/model/schematic.c: Use CAIRO_FORMAT_ARGB32 when exporting PNG.  This is
+  required to get transparent background.
+
+2008-03-18  maxy <>
+
+  * src/pspice2oregano.c: remove pspice2oregano 
+  darcs-hash:20080318191738-e47e8-e80e10b06daf56931bb0c6747789f815df2abf76.gz
+
+  * src/splash.c, src/splash.h: missing copyright in splash 
+  darcs-hash:20080318191636-e47e8-2de58a343e0367275711858127461013666623f5.gz
+
+  * data/libraries/power.oreglib, src/clipboard.c, src/clipboard.h,
+  src/create-wire.c, src/create-wire.h, src/cursors.c, src/cursors.h,
+  src/dialogs.c, src/dialogs.h, src/engines/engine.c, src/engines/engine.h,
+  src/engines/gnucap.c, src/engines/gnucap.h, src/engines/netlist.c,
+  src/engines/netlist.h, src/engines/ngspice.c, src/engines/ngspice.h,
+  src/errors.c, src/errors.h, src/file-manager.c, src/file-manager.h,
+  src/file.c, src/file.h, src/gplot/gplot.c, src/gplot/gplot.h,
+  src/gplot/gplotfunction.c, src/gplot/gplotfunction.h, src/gplot/gplotlines.c,
+  src/gplot/gplotlines.h, src/load-common.h, src/load-library.c,
+  src/load-library.h, src/load-schematic.c, src/load-schematic.h, src/main.c,
+  src/main.h, src/model/item-data.c, src/model/item-data.h,
+  src/model/node-store.c, src/model/node-store.h, src/model/node.c,
+  src/model/node.h, src/model/part-label.h, src/model/part-private.h,
+  src/model/part-property.c, src/model/part-property.h, src/model/part.c,
+  src/model/part.h, src/model/schematic-print-context.h, src/model/schematic.c,
+  src/model/schematic.h, src/model/sheet-pos.h, src/model/textbox.c,
+  src/model/textbox.h, src/model/wire-private.h, src/model/wire.c,
+  src/model/wire.h, src/netlist-editor.c, src/netlist-editor.h,
+  src/oregano-config.c, src/oregano-config.h, src/oregano-impl.c,
+  src/oregano-utils.c, src/oregano-utils.h, src/part-browser.c,
+  src/part-browser.h, src/plot-add-function.c, src/plot-add-function.h,
+  src/plot.c, src/plot.h, src/save-schematic.c, src/save-schematic.h,
+  src/schematic-view-menu.h, src/schematic-view.c, src/schematic-view.h,
+  src/settings.c, src/settings.h, src/sheet/grid.c, src/sheet/grid.h,
+  src/sheet/node-item.c, src/sheet/node-item.h, src/sheet/part-item.c,
+  src/sheet/part-item.h, src/sheet/sheet-item-factory.c,
+  src/sheet/sheet-item-factory.h, src/sheet/sheet-item.c,
+  src/sheet/sheet-item.h, src/sheet/sheet-private.h, src/sheet/sheet.c,
+  src/sheet/sheet.h, src/sheet/textbox-item.c, src/sheet/textbox-item.h,
+  src/sheet/wire-item.c, src/sheet/wire-item.h, src/sim-settings.c,
+  src/sim-settings.h, src/simulation.c, src/simulation.h, src/smallicon.c,
+  src/smallicon.h, src/stock.c, src/stock.h, src/type-utils.h,
+  src/xml-compat.h, src/xml-helper.c, src/xml-helper.h: fix power.oreglib +
+  copyright notices 
+  darcs-hash:20080318191055-e47e8-7af835c6c078087b4db578b04548f9c71a5fd9a6.gz
+
+2007-12-07  henrik.lipskoch <>
+
+  * src/model/part.c, src/sheet/part-item.c: rotate-flip-together  There was a
+  bug causing parts, which were both rotated and flipped, to have their nodes
+  not were the drawing suggests. Causing even the print-function to place the
+  schematic outside of the paper. Also, the clipboard didn't copy the
+  flip-property. This is now fixed. 
+  darcs-hash:20071207205543-bc21e-9d5febb82e1c5c0d68c397f5d750a53a44596e6a.gz
+
+2007-09-12  Ricardo Markiewicz <rmarkie@fi.uba.ar>
+
+  * README, oregano.spec.in: Remove libgnomeprint references. 
+  darcs-hash:20070912045105-7ae4f-058e8868e30a916597c66d3385b20bbd28799695.gz
+
+2007-08-26  Ricardo Markiewicz <rmarkie@fi.uba.ar>
+
+  * src/model/item-data.h, src/schematic-view-menu.h, src/schematic-view.c,
+  src/sheet/sheet-item.c: Add missing menu description and cleanup. 
+  darcs-hash:20070826202122-7ae4f-e2f657507579cd63492744a2029e12a8159c5416.gz
+
+2007-08-24  Ricardo Markiewicz <rmarkie@fi.uba.ar>
+
+  * src/sheet/part-item.c, src/sheet/sheet-item.c: code cleanup 
+  darcs-hash:20070824050107-7ae4f-ca1811ec96f839715b18fcce6a9facfd4af0b1ce.gz
+
+  * src/schematic-view.c: Use icons-only toolbar 
+  darcs-hash:20070824050050-7ae4f-0d4ed77961c65441c5d4dd1e422be98a35ad0666.gz
+
+  * src/schematic-view.c, src/sheet/part-item.c, src/sheet/sheet-item.c,
+  src/sheet/sheet-item.h, src/sheet/textbox-item.c, src/sheet/wire-item.c:
+  Implement context menu with GtkUIManager. 
+  darcs-hash:20070824044603-7ae4f-9aa4aa5b64f5d7722c45eda6c1e145c3d5542eb7.gz
+
+2007-08-22  Ricardo Markiewicz <rmarkie@fi.uba.ar>
+
+  * src/part-browser.c, src/schematic-view-ui.h, src/schematic-view.c: Migrate
+  from GnomeUIInfo to GtkUIManager 
+  darcs-hash:20070822042851-7ae4f-005e9e405456907d7767031da14f055f07941950.gz
+
+2007-08-21  Ricardo Markiewicz <rmarkie@fi.uba.ar>
+
+  * src/schematic-view.c, src/sheet/textbox-item.c, src/sheet/textbox-item.h:
+  Reset Sheet status to clean up textbox tool when is selected but not used. 
+  This closes bug #966. 
+  darcs-hash:20070821025238-7ae4f-96a21418171403caa1eca584785156c51be298d2.gz
+
+2007-08-14  Ricardo Markiewicz <rmarkie@fi.uba.ar>
+
+  * SConstruct: New development release 
+  darcs-hash:20070814060500-7ae4f-ca6d6bcc022ebc8ba89bcf8520c836f2e29d3db0.gz
+
+2007-07-18  timo.lindfors <>
+
+  * src/settings.c: settings-set-default-engine  Always set default engine in
+  settings dialog. This fix supresses the extra warning message 
+  (Oregano:78487): GLib-GObject-WARNING **: invalid uninstantiatable type
+  `(null)' in cast to `GtkWidget'  that was reported with bug 942 since
+  w_engine was NULL in apply_callback if user had not clicked any engine and
+  just accepted the default. 
+  darcs-hash:20070718065714-588de-e44f3598a30af4739c8050e4e465f5384ab52fd1.gz
+
+  * src/settings.c: bugfix-942  Fix bug 942. If a user closes the settings
+  dialog using "Window elements" act as if the user had pressed the "Close
+  button" (this saves settings). 
+  darcs-hash:20070718065121-588de-afab48e85bcd112bd09d453d6fb69ba2da018707.gz
+
+2007-07-17  timo.lindfors <>
+
+  * src/gplot/gplot.c: increase-plot-border  Increase the size of the border
+  around the plot axis to fix bug #945.  Defining a fixed border size in pixels
+  is definitely not a the best option. A better option would be to calculate
+  border size so that the largest possible number "999.99" fits on the left
+  side of the axis. Should I try to implement that or is the larger fixed-size
+  border ok? 
+  darcs-hash:20070717203144-588de-ea76eda045968b34c4406f326109966e63b917a3.gz
+
+2007-07-13  timo.lindfors <>
+
+  * data/models/SConscript: install-1N4148  Make sure 1N4148.model really gets
+  installed too. 
+  darcs-hash:20070713220606-588de-80ae67958988b37c8e77c42e7d0a03d1626dba6e.gz
+
+  * data/models/1N4148.model: add-1N4148  Add missing 1N4148.model that
+  examples/simple2.oregano uses. This fix was suggested by marga on #lugfi. A
+  bug report is also available at
+  http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=432997 
+  darcs-hash:20070713184048-588de-358b4877b0d16e1a172fde091708cc9cfce2a1f0.gz
+
+2007-01-22  Ricardo Markiewicz <rmarkie@fi.uba.ar>
+
+  * src/model/wire.c, src/part-browser.c, src/sheet/part-item.c: Remove
+  verbosity. 
+  darcs-hash:20070122004244-7ae4f-0aeb5fdcc8352b767f36404c44417d14a967bcc8.gz
+
+2007-01-19  Ricardo Markiewicz <rmarkie@fi.uba.ar>
+
+  * src/model/part.c, src/model/schematic.c: Set labels color when printing 
+  and set proper default colors. 
+  darcs-hash:20070119233231-7ae4f-52dbe77c95b1a7895df2a59326406899c82eb9ea.gz
+
+  * src/main.c: Missing parameter to g_print. 
+  darcs-hash:20070119231511-7ae4f-da08ba4c028ea015ddd88d368959d321be20b83c.gz
+
+  * src/main.c: Use c as short argument for "convert". 
+  darcs-hash:20070119231451-7ae4f-650a0a0a50ff80cad92c4513c3a267ba56fcab2f.gz
+
+2006-12-26  Ricardo Markiewicz <rmarkie@fi.uba.ar>
+
+  * src/main.c: Added command line option to convert schematics.  Now we can
+  use Oregano to batch convert Schematics file into PDF, PS, SVG or PNG with
+  the --convert command line option. Additionally we can set the width and
+  height of the output using --width and --height. 
+  darcs-hash:20061226020339-7ae4f-affb1469592f33497fe1a2f3b42a8b5c8498ed8f.gz
+
+  * src/SConscript: Lower-case package name. 
+  darcs-hash:20061226015800-7ae4f-7fb9516b63e86218e3a14a024867b661077028f4.gz
+
+2006-12-03  Ricardo Markiewicz <rmarkie@fi.uba.ar>
+
+  * data/dialogs/SConscript, data/dialogs/print-options.glade2,
+  src/model/item-data.c, src/model/item-data.h, src/model/node-store.c,
+  src/model/node-store.h, src/model/part.c,
+  src/model/schematic-print-context.h, src/model/schematic.c,
+  src/model/textbox.c, src/model/wire.c: Let the user change print colors in
+  the print dialog.  Now the user can change all the default colors when
+  printing. The color are stored per session right now, so they will be reset
+  to default colors the next time that oregano run. 
+  darcs-hash:20061203213302-7ae4f-66338023b894a35d83261cfbc72f20eef77bcf04.gz
+
+  * src/model/wire.c: Fix a bug in rotation code. 
+  darcs-hash:20061203213140-7ae4f-d7b29f58d54e53a9584e26dad906916e547f7366.gz
+
+2006-09-30  Ricardo Markiewicz <rmarkie@fi.uba.ar>
+
+  * src/model/wire.c: Merge 0.60.0 
+  darcs-hash:20060930054237-7ae4f-6c2071c5f3aa897127314655febcf4be2bbda87a.gz
+
+2006-09-12  Ricardo Markiewicz <rmarkie@fi.uba.ar>
+
+  * src/model/schematic.c: Modularize rotule printing. 
+  darcs-hash:20060912201347-7ae4f-8a299e18f44147f510b2d071cd344994f7969691.gz
+
+  * src/model/schematic.c: Basic rotule. 
+  darcs-hash:20060912190304-7ae4f-3fe00a3cdd4ee16092c6474b75086d6d1b6bb402.gz
+
+  * data/dialogs/export.glade2, src/model/schematic.c, src/model/schematic.h,
+  src/schematic-view.c: Added Background options to export. 
+  darcs-hash:20060912173631-7ae4f-3910fe3c174299fda35f11969c48288a799af0cf.gz
+
+  * src/model/node-store.c: Draw dots when printing or exporting. 
+  darcs-hash:20060912171445-7ae4f-32137deb54aa4690064b4456cbc45f26fe1fcd02.gz
+
+2006-09-07  Ricardo Markiewicz <rmarkie@fi.uba.ar>
+
+  * data/dialogs/export.glade2, src/schematic-view.c: Change
+  GtkFileChooserButton that can't be used as Save dialog. 
+  darcs-hash:20060907234641-7ae4f-07ffe53a3bcfd2c81d96024e755a8b8ad7fa5b96.gz
+
+  * SConstruct: Bump cairo version to 1.2.0. 
+  darcs-hash:20060907003649-7ae4f-2b483c7fa12f2013faee6a697888677c835b8090.gz
+
+  * src/model/schematic.c, src/model/schematic.h: Fix problems when exporting,
+  caused by lack of includes. 
+  darcs-hash:20060907001045-7ae4f-774f5c253f8c5e6751a783b1bb54f4daf4d37909.gz
+
+2006-09-06  Ricardo Markiewicz <rmarkie@fi.uba.ar>
+
+  * src/schematic-view.c: Pass correct format to export's function. 
+  darcs-hash:20060906232046-7ae4f-fe0f6a27861453463b958ac4ab2ba00e60fcb8bf.gz
+
+  * data/dialogs/SConscript, data/dialogs/export.glade2,
+  data/dialogs/plot-export.glade2, src/model/schematic.c,
+  src/model/schematic.h, src/schematic-view-ui.h, src/schematic-view.c: Added
+  Schematic export.  The export dialog let the user choose one export format
+  based on the features supported by Cairo. 
+  darcs-hash:20060906225655-7ae4f-3cc04cf77b28aa683c589cbd5a2cf9eeac4b5355.gz
+
+  * src/model/schematic.c, src/model/schematic.h: Split render and printing
+  code.  With this now I add a new schematic_export function. 
+  darcs-hash:20060906194147-7ae4f-6b15b14ac5c8b3ac603d7eb1a735c3b7871f7176.gz
+
+  * src/model/schematic.c: Fix return value. 
+  darcs-hash:20060906194127-7ae4f-957b3c08d3009028252effc50f6ddc243faa2792.gz
+
+  * SConstruct, data/dialogs/SConscript, data/dialogs/page-properties.glade2,
+  po/POTFILES.in, src/SConscript, src/model/item-data.c, src/model/item-data.h,
+  src/model/node-store.c, src/model/node-store.h, src/model/part.c,
+  src/model/schematic.c, src/model/schematic.h, src/model/textbox.c,
+  src/model/wire.c, src/model/wire.c-darcs-backup0, src/netlist-editor.c,
+  src/print.c, src/print.h, src/schematic-view.c, src/schematic-view.h: Port
+  printing code to GtkPrint.  Now the print engine is based on GtkPrint and
+  Cairo. Gtk+ version bump to 2.10 
+  darcs-hash:20060906053324-7ae4f-e37b9829dcd5b1790f12ad3869fd2a80babe25bc.gz
+
+2006-12-08  Ricardo Markiewicz <rmarkie@fi.uba.ar>
+
+  * data/dialogs/part-properties-dialog.glade2, src/sheet/part-item.c: Show the
+  model definition in the part-properties window.  By now is read only. I'll
+  add the ability to modify and save the custom model in the schematic. 
+  darcs-hash:20061208052652-7ae4f-d53091eeb0a7f9eb5bd46d05e9020caa1787b1a9.gz
+
+  * src/sheet/part-item.c: Remove unused declarations. 
+  darcs-hash:20061208052616-7ae4f-8d27bfbb8c645c6cb369f91ee1e2464abab3670d.gz
+
+2006-10-19  maxy <>
+
+  * oregano.desktop: .desktop update, thanks to Jordi Mallach 
+  darcs-hash:20061019144611-e47e8-80eb7522b20fcc1030248994722a4b9fbfef92fa.gz
+
+  * README, help/C/oregano.xml, help/es/oregano.xml, oregano.desktop,
+  oregano.spec.in, src/main.c: Change electrical to electronic 
+  darcs-hash:20061019143951-e47e8-4a9e6a098058836f1388a46c32470f9b18ec50a5.gz
+
+2006-10-02  Ricardo Markiewicz <rmarkie@fi.uba.ar>
+
+  * SConstruct, oregano.keys.in: Install missing icon.  Also, use the SVG
+  version of the icon. 
+  darcs-hash:20061002185252-7ae4f-525de3ddce3584607ece8b97b38dc5354b4f39f8.gz
+
+2006-09-30  Ricardo Markiewicz <gazer.arg@gmail.com>
+
+  * SConstruct: Preparing for new release. 
+  darcs-hash:20060930044359-89280-4eddee6d332ca96581747774f6bc707add882c32.gz
+
+2006-09-28  Ricardo Markiewicz <rmarkie@fi.uba.ar>
+
+  * src/engines/ngspice.c, src/settings.c: Fix the ngspice parser to proper
+  parse multiple analysis.  This also add a lot of verbosity about what the
+  parser is doing, to help find bugs and debug the parser. 
+  darcs-hash:20060928200017-7ae4f-c520d04e2b450dd13e9e15cac249ea0f6955f886.gz
+
+2006-09-27  Ricardo Markiewicz <rmarkie@fi.uba.ar>
+
+  * src/engines/ngspice.c: Added NgSpice model support. 
+  darcs-hash:20060927140945-7ae4f-be7368f19d4939640c7d246986d1cbec7483c4d9.gz
+
+  * src/gplot/gplot.c: Change unit step to 3. 
+  darcs-hash:20060927140218-7ae4f-5bd7720277d64c4ab609afe7416e300617851cf8.gz
+
+  * src/engines/ngspice.c, src/file-manager.c: NgSpice is working again. 
+  darcs-hash:20060927034708-7ae4f-9f34b1e1362491afc62b170877e5e0927da5cc6c.gz
+
+  * src/model/node-store.c: Remove unnecesary goto. 
+  darcs-hash:20060927021046-7ae4f-0556bbbad5ccb83729c195fd91099130e7edb614.gz
+
+  * src/engines/ngspice.c: Improve parsing non-binary data.  Still lack parsin
+  binary data. 
+  darcs-hash:20060927015722-7ae4f-b43870b142b9d1f77818b67b91414c32198ad6bb.gz
+
+  * src/engines/SConscript, src/engines/engine.c, src/engines/engine.h,
+  src/engines/ngspice.c, src/engines/ngspice.h, src/schematic-view.c,
+  src/settings.c, src/simulation.c: Initial NgSpice parser.  Is not fully
+  functional! 
+  darcs-hash:20060927011744-7ae4f-010c58047055916f423eafd02f66ef56b50de689.gz
+
+2006-09-26  Ricardo Markiewicz <rmarkie@fi.uba.ar>
+
+  * src/engines/gnucap.c, src/gplot/gplot.c: Print label unit as text. 
+  darcs-hash:20060926182055-7ae4f-ce2e40ac7e7f4b1b573b0b6e3e348d43c8cae99d.gz
+
+2006-09-25  Ricardo Markiewicz <rmarkie@fi.uba.ar>
+
+  * src/model/node-store.c: Fix wire union.  This close bug #319 
+  darcs-hash:20060925200832-7ae4f-6801d9aa91a6c0ab28bd66aeb0543d3627a18296.gz
+
+  * src/schematic-view.c: Ask to save changes when File->Quit is requested. 
+  This close bug# 514. 
+  darcs-hash:20060925194622-7ae4f-cd5abc5a3b5d43708e130453b29f211bf94ae485.gz
+
+  * ABOUT-NLS, NEWS, README, TODO, acconfig.h, pixmaps, src/load-library.c,
+  src/model/node-store.c: Tree cleanup. 
+  darcs-hash:20060925183528-7ae4f-b1c4ce0d2f8a95a358b29394590521afb7e798ef.gz
+
+2006-09-22  Ricardo Markiewicz <rmarkie@fi.uba.ar>
+
+  * src/schematic-view.c: Change Object properties sensitivity based on the
+  selection. 
+  darcs-hash:20060922200054-7ae4f-ae7520179babf2dfefa849ac7c5cf34fa08bbf21.gz
+
+  * src/model/item-data.c, src/model/item-data.h, src/model/part.c,
+  src/model/textbox.c, src/model/wire.c: New method to check if an ItemData has
+  properties.  This methos is useful to change the sensitivity of the menu and
+  toolbars items. 
+  darcs-hash:20060922195930-7ae4f-a63190fd864160182c9a2318a456b2bf9c840ebd.gz
+
+  * src/load-schematic.c, src/part-browser.c, src/plot.c, src/schematic-view.c:
+  Fix compilation warnings. 
+  darcs-hash:20060922190319-7ae4f-7601b7f67a512cc801457b33094146b906e7e97b.gz
+
+  * src/engines/gnucap.c, src/plot.c, src/simulation.c: Release simulation data
+  when engine is destroyed. 
+  darcs-hash:20060922185442-7ae4f-d8b95d15a9b863e0d2df2e965efbb07aa2c76f0c.gz
+
+  * src/main.c, src/main.h: Port to GOptions. 
+  darcs-hash:20060922185355-7ae4f-c737fbcaabaf38112c88f6ad78b59e2acbecda24.gz
+
+2006-09-15  Ricardo Markiewicz <rmarkie@fi.uba.ar>
+
+  * src/plot.c: Disable unused menus 
+  darcs-hash:20060915013932-7ae4f-683d180d3f1a193a0cf9c246e5a9016afbe90ea8.gz
+
+2006-09-14  Ricardo Markiewicz <rmarkie@fi.uba.ar>
+
+  * src/gplot/gplot.c: Improve axis drawing in GPlot. 
+  darcs-hash:20060914045038-7ae4f-3be1b720c816ff77413f4935e9859783e8271f6a.gz
+
+2006-09-13  Ricardo Markiewicz <rmarkie@fi.uba.ar>
+
+  * src/plot.c: Enabling Plot Functions again. 
+  darcs-hash:20060913194417-7ae4f-6747c946a265f8dd1b0abd46528848cde6dd2e88.gz
+
+  * src/plot.c: Reset next_color on each plot. 
+  darcs-hash:20060913192616-7ae4f-1d3115aad9a903a0429933a43501c247d466c6b1.gz
+
+  * src/gplot/gplotlines.c, src/plot.c: Enabling plot colors again. 
+  darcs-hash:20060913041744-7ae4f-1d8c7e506127b2977381a75b6b6005b2e4972925.gz
+
+  * src/engines/gnucap.c, src/model/schematic.c, src/oregano-config.c,
+  src/plot.c, src/schematic-view.c: Fix memory leak and possible crash. 
+  darcs-hash:20060913025926-7ae4f-e5557eb0c0da1571089176c3cc56594cd80a91eb.gz
+
+2006-09-12  Ricardo Markiewicz <rmarkie@fi.uba.ar>
+
+  * po/SConscript: New build Target : update-pot. 
+  darcs-hash:20060912040153-7ae4f-a97cdadce353c50bfb4ac50dce031db071b622e1.gz
+
+  * SConstruct: New Build option Debug.  Set Debug=yes if you want compile with
+  debug symbols. 
+  darcs-hash:20060912040111-7ae4f-70678575883acbab3baef918254fde98e91a09e4.gz
+
+  * data/models/DiodeBridge.model: SUBCKT can't use 0 as pin ID.  Because 0 is
+  the global ground. 
+  darcs-hash:20060912040009-7ae4f-04de4cf0c5064abc75a9dbb83fc0cc3b13d112ab.gz
+
+  * data/SConscript, data/examples/12ax7a.oregano, data/examples/555.oregano,
+  data/examples/741.oregano, data/examples/Full-wave bridge rectifier.oregano,
+  data/examples/OP177B.oregano, data/examples/SConscript,
+  data/examples/carga_capacitor.oregano, data/examples/opamp.oregano,
+  data/examples/opamp_ideal.oregano, data/examples/pasa_altos.oregano,
+  data/examples/simple.oregano, data/examples/simple2.oregano,
+  data/examples/transistors.oregano, data/examples/zener.oregano,
+  src/samples/12ax7a.oregano, src/samples/555.oregano, src/samples/741.oregano,
+  src/samples/Full-wave bridge rectifier.oregano, src/samples/Makefile.am,
+  src/samples/OP177B.oregano, src/samples/carga_capacitor.oregano,
+  src/samples/opamp.oregano, src/samples/opamp_ideal.oregano,
+  src/samples/pasa_altos.oregano, src/samples/simple.oregano,
+  src/samples/simple2.oregano, src/samples/transistors.oregano,
+  src/samples/zener.oregano: Install examples. 
+  darcs-hash:20060912035217-7ae4f-7e215a7811cf66afaf71dd632a7732ea07a4460e.gz
+
+  * src/sheet/sheet-item.c: Unregister ItemData before start moving.  This
+  close bug #320 
+  darcs-hash:20060912034358-7ae4f-193d3a4d254df298068ca5ef710a79db323aea5d.gz
+
+  * src/sheet/sheet-item.c: Added Flip option in component popup menu.  This
+  close bug #323. 
+  darcs-hash:20060912001539-7ae4f-e24d9b00b0c2b4ee98533ea9a3f029ca80404dc3.gz
+
+  * src/sheet/part-item.c: Fix potential crash while flipping components. 
+  darcs-hash:20060912001423-7ae4f-bd716ff557daa8b18ce54002db7884974d6a3f7a.gz
+
+2006-09-11  Ricardo Markiewicz <rmarkie@fi.uba.ar>
+
+  * po/oregano.pot: Added gettext template (.pot) 
+  darcs-hash:20060911061118-7ae4f-04afd3f1807a1eb937f8cc873ac0fffef1279b06.gz
+
+  * po/ca.po, po/de.po, po/es.po, po/fr.po, po/it.po, po/ja.po, po/pl.po,
+  po/pt_BR.po, po/ro.po, po/ru.po, po/sv.po: Update translations. 
+  darcs-hash:20060911054750-7ae4f-3564310e6b902e4e2db655c709a58a19f678ea83.gz
+
+  * po/POTFILES.in: Added missing files for translations. 
+  darcs-hash:20060911054730-7ae4f-1f735da87063b2c8ebc74810ed13514b1dfa436d.gz
+
+  * src/schematic-view-ui.h: Merged Settings and Edit menu. 
+  darcs-hash:20060911045045-7ae4f-8cfe29cfbd7b9032c44f5fa0a1a9c8c2966b899e.gz
+
+  * src/engines/gnucap.c, src/model/schematic.c, src/model/schematic.h,
+  src/schematic-view.c: Improved Schematic's error log.  Now the Schematic use
+  a GtkTextBuffer to save error reports, and use Tag to highlite critical
+  errors. 
+  darcs-hash:20060911041003-7ae4f-8a668411e333e7da6622ca22569c94e74719b25f.gz
+
+2006-09-09  lucas.chiesa <>
+
+  * src/sheet/textbox-item.c: Fix selected label colors.  Closes bug #322 
+  darcs-hash:20060909044441-c1435-94d306a17a7c2e90080483007156fbac6ce71528.gz
+
+  * src/schematic-view-ui.h: Fix shortcuts in Edit menu 
+  darcs-hash:20060909044344-c1435-940f1f7951401c557d70215d226d12c50d3d4ed3.gz
+
+  * src/schematic-view-ui.h: Moved Tools -> View Netlist to View -> Netlist 
+  darcs-hash:20060909040814-c1435-a59d43483ca3b00d37032c42eb5aa84fb80c18ec.gz
+
+2006-09-08  Ricardo Markiewicz <rmarkie@fi.uba.ar>
+
+  * data/libraries/default.oreglib: Added VAC symbol.  This close bug #24[1],
+  thanks Diego Essaya.  [1]:
+  
+  tid=132 
+  darcs-hash:20060908203139-7ae4f-95971b739ed53d571db77e05d89d26a16b13a12f.gz
+
+2006-09-07  Ricardo Markiewicz <rmarkie@fi.uba.ar>
+
+  * po/es.po: Fix Translation. 
+  darcs-hash:20060907153910-7ae4f-65f214b833d940b0fec1ebf688670b79cd565e75.gz
+
+  * data/dialogs/settings.glade2, src/engines/engine.c, src/engines/engine.h,
+  src/engines/gnucap.c, src/settings.c, src/simulation.c: Check for engine
+  availability.  Also, improve settings dialog with a graphical alert if the
+  engine is not fully available. 
+  darcs-hash:20060907051311-7ae4f-3be585c0b3eb18cdb78e9cf68c22f11cd66e56b3.gz
+
+2006-09-04  Ricardo Markiewicz <rmarkie@fi.uba.ar>
+
+  * src/samples/Full-wave bridge rectifier.oregano: Added new example.  The
+  Full-wave bridge rectifier example show the magic behind the new model usage.
+   darcs-hash:20060904224426-7ae4f-efa6b154dc154f3f91a7b315f8647375602c202f.gz
+
+  * src/engines/gnucap.c, src/engines/netlist.c, src/engines/netlist.h: Include
+  models in the netlist.  The models are included using the .include command,
+  referencing a .model file installed in PREFIX/share/oregano/models. 
+  darcs-hash:20060904222836-7ae4f-25befc3d4106e18a4443c821cae00fdd0b479b45.gz
+
+  * data/libraries/default.oreglib: Modify library to use the new Diode Bridge
+  model. 
+  darcs-hash:20060904222611-7ae4f-ec8ff27ac3bb43750110148c36d5fc2258463e67.gz
+
+  * data/models/DiodeBridge.model: Added a new Model : Diode Bridge. 
+  darcs-hash:20060904222549-7ae4f-0a42ef1d6ef405cbf3c394db5efa6cc8ab876851.gz
+
+  * data/SConscript, data/models/Makefile.am, data/models/SConscript: Install
+  Spice/GnuCap models. 
+  darcs-hash:20060904222446-7ae4f-ebbbc60a904420c160823dca1ec84ded28b4552d.gz
+
+  * src/schematic-view-ui.h, src/schematic-view.c: Hide unused button in the
+  toolbar. 
+  darcs-hash:20060904045620-7ae4f-fa397b463329a90d6080357a49e81b91424e5f62.gz
+
+  * src/plot.c: Removed old code that cause glib warnings. 
+  darcs-hash:20060904043935-7ae4f-a5ddda5914aa139a561f6a6a8f3656f8bdb512e0.gz
+
+  * src/engines/gnucap.c: Emit Aborted signal if there was no analysis. 
+  darcs-hash:20060904041638-7ae4f-f9f7d77a5866d7bebe356bf4fab6bbda438c2a83.gz
+
+2006-08-30  Ricardo Markiewicz <rmarkie@fi.uba.ar>
+
+  * src/engines/gnucap.c: Implement stop method in OreganoGnuCap. 
+  darcs-hash:20060830023029-7ae4f-cea3db94058349ee6149bda45a1c195dc58afaa0.gz
+
+  * src/engines/engine.c, src/engines/engine.h, src/engines/gnucap.c,
+  src/simulation.c: Added aborted signal to OreganoEngine. 
+  darcs-hash:20060830012405-7ae4f-ab6d91144b896d102a890ff7b0c6c267445f1ecd.gz
+
+2006-08-29  Ricardo Markiewicz <rmarkie@fi.uba.ar>
+
+  * src/engines/gnucap.c: Let the UI responds better during the simulation. 
+  darcs-hash:20060829140122-7ae4f-93685d35a42a23c15f3e30fd8b0ad6138d139ee1.gz
+
+  * data/dialogs/simulation.glade2, src/engines/engine.c, src/engines/engine.h,
+  src/engines/gnucap.c, src/plot.c, src/simulation.c: Show current operation in
+  the progress dialog. 
+  darcs-hash:20060829135951-7ae4f-e5d27e08424dce593e243d05e462d357f015f7e2.gz
+
+  * data/dialogs/settings.glade2, src/main.h, src/model/SConscript,
+  src/oregano-config.c, src/settings.c, src/settings.h: Update settings dialog
+  and config options. 
+  darcs-hash:20060829052053-7ae4f-545521b59353f4d8863e158321bec19a02b124f3.gz
+
+  * src/engines/engine.c, src/engines/engine.h, src/netlist-editor.c,
+  src/netlist-editor.h, src/schematic-view.c: Use EngineFactory. 
+  darcs-hash:20060829051920-7ae4f-e9d92dec70610f66e0ad23ffad772a5335572bef.gz
+
+  * src/engines/engine.c, src/engines/engine.h: Added Engine Factory. 
+  darcs-hash:20060829043401-7ae4f-75b8c0aad136de83be0b7c8c9745e94088a3a779.gz
+
+  * src/engines/gnucap.h: Missing argument. 
+  darcs-hash:20060829043348-7ae4f-eae0d7eaab75a48d4773e185e2114c1342751cfa.gz
+
+2006-08-28  Ricardo Markiewicz <rmarkie@fi.uba.ar>
+
+  * src/netlist-editor.c, src/netlist-editor.h, src/schematic-view.c: Oregano
+  should compile again.  Fix compilation (many features are broken at this
+  moment!). Also, fix many gcc warnings. 
+  darcs-hash:20060828135317-7ae4f-c63a75c5c5f593874b24f8111de4cfb06cffa992.gz
+
+  * src/plot.c, src/simulation.c: Plot window now functional again. 
+  darcs-hash:20060828040505-7ae4f-a5c5305e0398e997c3e5358a06f50d0b5a999c2b.gz
+
+  * src/model/schematic.c: schematic_log_append really append now. 
+  darcs-hash:20060828040424-7ae4f-9ef9c6fbf6605db8ebb091122f780419a66cbae8.gz
+
+  * src/simulation.c, src/simulation.h: Temporal place for helpers. 
+  darcs-hash:20060828040341-7ae4f-500d71c5ac1de8a3e2a498894ccd132fd9673a72.gz
+
+  * src/engines/gnucap.c: GnuCap parser complete. 
+  darcs-hash:20060828040225-7ae4f-210db92b465d74a71768d446fa6e91052a38631a.gz
+
+  * src/engines/engine.c, src/engines/engine.h: Added a method to
+  retrievesimulation results to engines. 
+  darcs-hash:20060828040132-7ae4f-ac9cb0a7101bf06ee33a1794b7c54b64bdc77f5a.gz
+
+  * src/engines/gnucap.c: Fix callback name. 
+  darcs-hash:20060828005127-7ae4f-2f9a54f206da945484f1c31d11238c83b0965786.gz
+
+  * src/engines/gnucap.c: Make sure to read all output of backend. 
+  darcs-hash:20060828004411-7ae4f-412412e044719cb152eec036a9285f580d09b509.gz
+
+  * src/engines/gnucap.c: GnuCap I/O private refactoring. 
+  darcs-hash:20060828000942-7ae4f-4d6fdec5b44272bd4f9adfa38b3302d2eea63988.gz
+
+  * src/engines/engine.h: Fix method parameters. 
+  darcs-hash:20060828000752-7ae4f-5f31ad55cb784328978b1e77ba7cd972ede617c1.gz
+
+2006-08-27  Ricardo Markiewicz <rmarkie@fi.uba.ar>
+
+  * src/engines/gnucap.c: Add I/O watches to read GnuCap stdout. 
+  darcs-hash:20060827173815-7ae4f-fc3acdb5e641ddbc4879c58022bb2a3a57606025.gz
+
+  * src/SConscript, src/oregano_parser.pl: Removed unneeded external parsing
+  script. 
+  darcs-hash:20060827054914-7ae4f-ee36a9f07fbac4780858c482dc40ee756627da88.gz
+
+  * src/netlist-editor.h, src/sheet/part-item.c: Fix some includes problems. 
+  darcs-hash:20060827054609-7ae4f-054dcaa1ab609301747524cdf6bb965ed673a0b2.gz
+
+  * src/netlist-editor.c, src/plot-add-function.h, src/schematic-view.c,
+  src/simulate.h, src/simulation.h: Remove simulate.h. 
+  darcs-hash:20060827054514-7ae4f-1a127a994ee91f347d4436fe0fe439358ffe8144.gz
+
+  * src/engines/netlist.c: Fix NetlistData initialization. 
+  darcs-hash:20060827054411-7ae4f-6d5cd07ff0896e543ee1f18a5bf01343d95b2838.gz
+
+  * po/POTFILES.in, src/SConscript, src/engines/SConscript,
+  src/engines/engine.c, src/engines/engine.h, src/engines/gnucap.c,
+  src/engines/netlist.c, src/engines/netlist.h, src/netlist.c, src/netlist.h,
+  src/plot-add-function.c, src/plot-add-function.h, src/plot.c, src/plot.h,
+  src/schematic-view.c, src/schematic-view.h, src/sim-engine.c,
+  src/sim-engine.h, src/simulate.c, src/simulate.h, src/simulation.c: Added
+  GnuCap engine and netlist generation.  This break source code compilation and
+  there are many things to do before get Oregano working again.  The netlist
+  generation was split into Netlist Helper functions and Engine specific output
+  formating. 
+  darcs-hash:20060827051908-7ae4f-79f3be2c9e5827ebd30b18964368f86b5e7ff69b.gz
+
+  * src/SConscript, src/engines/SConscript, src/engines/engine.c,
+  src/engines/engine.h, src/engines/gnucap.c, src/engines/gnucap.h: Initial
+  engine modularization.  We'll provide an unified interface to access multiple
+  spice-like engines. This will cause that it's simpler to add other simulation
+  engines. 
+  darcs-hash:20060827011711-7ae4f-32fba3b7d8e4e10ae7149d0be46ef5d1d75b05b1.gz
+
+2006-08-26  Ricardo Markiewicz <rmarkie@fi.uba.ar>
+
+  * data/SConscript, data/dialogs/SConscript,
+  data/dialogs/clamp-properties-dialog.glade2, data/dialogs/log-window.glade2,
+  data/dialogs/page-properties.glade2, data/dialogs/part-browser.glade2,
+  data/dialogs/part-properties-dialog.glade2,
+  data/dialogs/plot-add-function.glade2, data/dialogs/plot-export.glade2,
+  data/dialogs/plot-window.glade2, data/dialogs/properties.glade2,
+  data/dialogs/settings.glade2, data/dialogs/sim-settings.glade2,
+  data/dialogs/simulation.glade2, data/dialogs/splash.glade2,
+  data/dialogs/splash.xpm, data/dialogs/textbox-properties-dialog.glade2,
+  data/dialogs/view-netlist.glade2, po/POTFILES.in, src/SConscript,
+  src/dialogs/SConscript, src/dialogs/clamp-properties-dialog.glade2,
+  src/dialogs/log-window.glade2, src/dialogs/page-properties.glade2,
+  src/dialogs/part-browser.glade2, src/dialogs/part-properties-dialog.glade2,
+  src/dialogs/plot-add-function.glade2, src/dialogs/plot-export.glade2,
+  src/dialogs/plot-window.glade2, src/dialogs/properties.glade2,
+  src/dialogs/settings.glade2, src/dialogs/sim-settings.glade2,
+  src/dialogs/simulation.glade2, src/dialogs/splash.glade2,
+  src/dialogs/splash.xpm, src/dialogs/textbox-properties-dialog.glade2,
+  src/dialogs/view-netlist.glade2, src/splash.c: Move dialogs dir to a better
+  place. 
+  darcs-hash:20060826192622-7ae4f-c52d2c0f6954440c16137be561e2b692ee37495e.gz
+
+  * SConstruct: SConstruct cleanup.  * Install .desktop file in the correct
+  place. * Run update-mime-database only after installing. * Coding style
+  fixes. 
+  darcs-hash:20060826185447-7ae4f-aebcecb943fde02438065be85d21d38def194a2b.gz
+
+2006-08-24  Ricardo Markiewicz <rmarkie@fi.uba.ar>
+
+  * src/sheet/part-item.c: Fix possible crash when editing part properties. 
+  darcs-hash:20060824203751-7ae4f-32988c4bb4c197617168b02e2ae9222feeb2e936.gz
+
+  * src/dialogs/clamp-properties-dialog.glade2,
+  src/dialogs/part-properties-dialog.glade2,
+  src/dialogs/textbox-properties-dialog.glade2, src/sheet/part-item.c,
+  src/sheet/textbox-item.c: Instant-Apply properties dialogs. 
+  darcs-hash:20060824040405-7ae4f-0a0ca6b3238821023affd36d5f756499dcfc0bbd.gz
+
+  * src/dialogs/sim-settings.glade2, src/sim-settings.c: Instant-Apply
+  simulation settings dialog. 
+  darcs-hash:20060824035356-7ae4f-6a3ad0d67c2213dcc900f00c2741f75a8952642f.gz
+
+  * src/dialogs/settings.glade2, src/settings.c: Instant-Apply settings dialog.
+   darcs-hash:20060824034422-7ae4f-c403bace4c903293fa514cc1143c95711e403180.gz
+
+  * src/settings.c: Missing Widget cast. 
+  darcs-hash:20060824034325-7ae4f-d4e75910ed4f8255e8093618807e5794019d3eae.gz
+
+  * SConstruct: New command-line options.  * RunUpdateMimeDatabase=[yes|no] to
+  enable or disable running update-mime-database * Now -h show full help text 
+  darcs-hash:20060824033054-7ae4f-bade136ed83f8e0467e286fb844791b0ec372ecd.gz
+
+  * src/SConscript, src/dialogs/settings.glade2, src/oregano-config.c,
+  src/settings.c: Replace the deprecated GnomeEntry with GtkFileChooserButton. 
+  darcs-hash:20060824023015-7ae4f-e8cf0b4b3d84d88c5ecb9295e17313ab46bdfa9d.gz
+
+  * src/main.c: Add some #DEFINE and includes to enable Gtk+ gettext support. 
+  darcs-hash:20060824014909-7ae4f-5945e0f183f1ebb42dfa3d988f616b404662e87b.gz
+
+2006-07-25  Ricardo Markiewicz <rmarkie@fi.uba.ar>
+
+  * SConstruct: Final touches for the new release. 
+  darcs-hash:20060725144305-7ae4f-3824fad3cc1f5bf3a6940fc7403e2cea61b1faab.gz
+
+  * SConstruct: Strip / from begin of PREFIX path. 
+  darcs-hash:20060725132140-7ae4f-76a789e1261d348c850905c0c1c39089ad06bc13.gz
+
+  * data/models/SConscript: Merge SCons modifications. 
+  darcs-hash:20060725131237-7ae4f-c7489409505448dee0faf72617f7e0879d67227d.gz
+
+  * SConstruct, data/libraries/SConscript, data/models/SConscript,
+  data/models/SConscript-darcs-backup0, po/SConscript, src/SConscript,
+  src/dialogs/SConscript: More [_\c3_]SCons fixes. 
+  darcs-hash:20060725120403-7ae4f-234e500dc76c7661d999baa5aa0c048bb0c82e7e.gz
+
+2006-06-01  Ricardo Markiewicz <rmarkie@fi.uba.ar>
+
+  * SConstruct, data/models/SConscript: Some fix to build system.  The first
+  fix set default SourceSignature to timestamp, to avoid scons create
+  .sconssing files everywhere when using MD5 signatures.  The second fix
+  prevent scons to check DESTDIR in build time, and check for DESTDIR on
+  install. 
+  darcs-hash:20060601002923-7ae4f-0765601d2196675891bfdf17e076430a61184f36.gz
+
+2006-05-24  Ricardo Markiewicz <rmarkie@fi.uba.ar>
+
+  * src/clipboard.c, src/create-wire.c, src/cursors.c, src/dialogs.c,
+  src/file-manager.c, src/file-manager.h, src/file.c, src/load-library.c,
+  src/load-schematic.c, src/main.c, src/model/item-data.c,
+  src/model/node-store.c, src/model/node.c, src/model/part-property.c,
+  src/model/part.c, src/model/schematic.c, src/model/textbox.c,
+  src/model/wire.c, src/netlist-editor.c, src/netlist.c, src/oregano-config.c,
+  src/oregano-impl.c, src/oregano-utils.c, src/part-browser.c,
+  src/plot-add-function.c, src/plot.c, src/print.c, src/save-schematic.c,
+  src/schematic-view.c, src/settings.c, src/sheet/grid.c,
+  src/sheet/node-item.c, src/sheet/part-item.c, src/sheet/sheet-item-factory.c,
+  src/sheet/sheet-item.c, src/sheet/sheet.c, src/sheet/textbox-item.c,
+  src/sheet/wire-item.c, src/sim-engine.c, src/sim-settings.c,
+  src/simulation.c, src/smallicon.c, src/stock.c, src/xml-helper.c: Update
+  copyright year. 
+  darcs-hash:20060524030814-7ae4f-7aec4a8193baf4e2afa6ba0d3a2e370eb4525bc8.gz
+
+  * src/plot.c: Remove more unused close. 
+  darcs-hash:20060524025632-7ae4f-37c5a5504672fe8853aa6dc44025d7b019de0988.gz
+
+  * src/gplot/gplot.c: Adjust axis unit label.  We find the best divisor for
+  the current window, and adjustthe labels text to show.  For example new want
+  show a mark with value "10" and an axis label "10e2 Hz", instead a mark of
+  value "1000" with an axis label "Hz". 
+  darcs-hash:20060524024442-7ae4f-c0c82560547b19630acd3f66b552d595b48f5c6b.gz
+
+  * src/plot.c: Remove unused code. 
+  darcs-hash:20060524015835-7ae4f-d78c79268f1dbb66e7fab372b86965b02c55d866.gz
+
+2006-05-21  Ricardo Markiewicz <rmarkie@fi.uba.ar>
+
+  * src/sim-engine.c: Fix problems with ngspice backend.  Patch sent by Marc
+  Lorber (Lorber.Marc at wanadoo dot fr. 
+  darcs-hash:20060521193953-7ae4f-fba2c4552221cdff63b830ee6e0c2fdeaa9c0cbb.gz
+
+2006-05-06  Ricardo Markiewicz <rmarkie@fi.uba.ar>
+
+  * src/plot.c: Add unit's labels to the plot. 
+  darcs-hash:20060506044304-7ae4f-528152a15e5aa55ecf921361b578d335ac8b5b8e.gz
+
+2006-05-14  Ricardo Markiewicz <rmarkie@fi.uba.ar>
+
+  * src/gplot/gplot.c, src/gplot/gplotlines.c, src/plot.c: Some coding style
+  fixes. 
+  darcs-hash:20060514222115-7ae4f-152f7b5d13c6bd7ba2102fa2eaac5b84b81df763.gz
+
+  * src/gplot/gplot.c: Fix clean function. 
+  darcs-hash:20060514221932-7ae4f-eca82bbcf42908c11cc776b8a4d7441497235644.gz
+
+  * src/gplot/gplot.c: Correct display when width == 0 or heught == 0. 
+  darcs-hash:20060514221118-7ae4f-686a274eab88a1980072ec9f9f4b23574105b937.gz
+
+  * src/gplot/gplot.c: Update bbox first. 
+  darcs-hash:20060514221009-7ae4f-e543792133e6575b41e75f734af3795f7a008e80.gz
+
+  * src/gplot/gplot.c: Fix list destruction. 
+  darcs-hash:20060514220856-7ae4f-fe5d9162243dca4be76c48db870c3ba4c0a4d33f.gz
+
+2006-05-06  Ricardo Markiewicz <rmarkie@fi.uba.ar>
+
+  * SConstruct: Finals touches in Scons scripts. 
+  darcs-hash:20060506041003-7ae4f-278e7dbbf8bbcaeb7c7820d5a3c021e4a6e16457.gz
+
+  * SConstruct: Update dependencies versions.  Please report if you find that
+  Oregano compile with an older version of any dependency. 
+  darcs-hash:20060506040708-7ae4f-959beedd04a5736659cc71f97a6eacc8e577ebb9.gz
+
+2006-05-02  Ricardo Markiewicz <rmarkie@fi.uba.ar>
+
+  * SConstruct, src/SConscript: Install additional files. 
+  darcs-hash:20060502020436-7ae4f-c00fedb4f8dfd23c334ded0759cef3eca6cf50a6.gz
+
+2006-04-27  Ricardo Markiewicz <rmarkie@fi.uba.ar>
+
+  * SConstruct: Do not update .po files on build. 
+  darcs-hash:20060427024801-7ae4f-3a9747db84c8be0f974282d0325c4da8ec301679.gz
+
+  * SConstruct, po/POTFILES.in, po/SConscript, src/dialogs/SConscript: Add
+  gettext support. 
+  darcs-hash:20060427021903-7ae4f-fe770d3a10c333a4d0be40aaec7d463621fca14d.gz
+
+  * INSTALL, Makefile.am, SConstruct, autogen.sh, config.h.in, configure.in,
+  data/Makefile.am, data/SConscript, data/libraries/Makefile.am,
+  data/libraries/SConscript, data/models/SConscript, docs/Makefile.am,
+  help/C/Makefile.am, help/Makefile.am, help/es/Makefile.am,
+  help/fr/Makefile.am, install-sh, missing, mkinstalldirs, omf.make,
+  src/Makefile.am, src/SConscript, src/create-wire.c, src/create-wire.h,
+  src/cursors.c, src/dialogs.c, src/dialogs/Makefile.am,
+  src/dialogs/SConscript, src/file.c, src/file.h, src/gplot/Makefile.am,
+  src/gplot/SConscript, src/load-library.c, src/load-schematic.c, src/main.c,
+  src/model/ChangeLog, src/model/Makefile.am, src/model/SConscript,
+  src/model/item-data.c, src/model/node-store.c, src/model/node.c,
+  src/model/part.c, src/model/textbox.c, src/model/wire.c, src/netlist.c,
+  src/netlist.h, src/oregano-config.c, src/part-browser.c,
+  src/pixmaps/Makefile.am, src/plot.c, src/print.c, src/pspice2oregano.c,
+  src/save-schematic.c, src/schematic-view.c, src/settings.c,
+  src/sheet/ChangeLog, src/sheet/Makefile.am, src/sheet/SConscript,
+  src/sheet/part-item.c, src/sheet/sheet-item-factory.c,
+  src/sheet/sheet-item.c, src/sheet/sheet-private.h, src/sheet/sheet.c,
+  src/sheet/textbox-item.c, src/sheet/textbox-item.h, src/sheet/wire-item.c,
+  src/sheet/wire-item.h, src/sim-engine.c, src/sim-settings.c, src/simulate.c,
+  src/simulate.h, src/simulation.c, src/stock.c, src/stock/Makefile.am,
+  src/stock/README, src/xml-helper.c, stamp-h.in, xmldocs.make: Drop autotools
+  in favor of SCons.  SCons[1] is an Open Source software construction tool. 
+  [1] : http://www.scons.org/ 
+  darcs-hash:20060427012017-7ae4f-4d524b5a32f1d783c2ec9c90b573241893750d83.gz
+
+2006-04-24  Ricardo Markiewicz <rmarkie@fi.uba.ar>
+
+  * src/plot.c: Show cursor value in plot window. 
+  darcs-hash:20060424000454-7ae4f-8775f68da3967c6372a46373b9d1e46564a8a920.gz
+
+  * src/gplot/gplot.c: Fix events propagation. 
+  darcs-hash:20060424000344-7ae4f-51fd574a98b59cbf269d0947051e503d47f5bce1.gz
+
+  * src/gplot/gplot.c, src/gplot/gplot.h: Mapping user and device coords. 
+  darcs-hash:20060424000307-7ae4f-a2833923420e9aaa25a6f7e705f7215745d535ae.gz
+
+2006-04-23  Ricardo Markiewicz <rmarkie@fi.uba.ar>
+
+  * src/gplot/gplot.c, src/gplot/gplotlines.c: Code clean up. 
+  darcs-hash:20060423232255-7ae4f-8eaacd15cf2a2b3c4c66e2fe666015d4559b8bfb.gz
+
+  * src/dialogs/plot-window.glade2, src/stock.c, src/stock.h,
+  src/stock/zoom_pan.xpm, src/stock/zoom_region.xpm: Added Stock icons for zoom
+  toolbar in the plot window. 
+  darcs-hash:20060423231712-7ae4f-fe1a144238e19f45e602c886d8d6d42b579a1b3d.gz
+
+2006-04-12  Ricardo Markiewicz <rmarkie@fi.uba.ar>
+
+  * configure.in: Update dependencies. 
+  darcs-hash:20060412002548-7ae4f-939954dc466cd93ce98453b37e99b7c2bee6e08e.gz
+
+  * src/model/node-store.c: Prevent joining wires if a node exists. 
+  darcs-hash:20060412001448-7ae4f-cafa6356cbcf72cee42908fcb219e2edca5ea253.gz
+
+2006-04-11  Ricardo Markiewicz <rmarkie@fi.uba.ar>
+
+  * ChangeLog: Delete unused file.  The ChangeLog file will be generated using
+  `darcs changes` in each release. 
+  darcs-hash:20060411235228-7ae4f-488a0f2b2287981503ed1e2748e7613f3e154449.gz
+
+  * configure.in: Marking version as 0.50.0-beta! 
+  darcs-hash:20060411225930-7ae4f-272e4572a5e2a1449d4f24142d8daea72a616976.gz
+
+  * configure.in, src/Makefile.am, src/dialogs/plot-window.glade2,
+  src/gplot/Makefile.am, src/gplot/gplot.c, src/gplot/gplot.h,
+  src/gplot/gplotfunction.c, src/gplot/gplotfunction.h, src/gplot/gplotlines.c,
+  src/gplot/gplotlines.h, src/gtkcairoplot/ChangeLog,
+  src/gtkcairoplot/Makefile.am, src/gtkcairoplot/gtkcairoplot.c,
+  src/gtkcairoplot/gtkcairoplot.h, src/gtkcairoplot/gtkcairoplotitems.c,
+  src/gtkcairoplot/gtkcairoplotitems.h, src/gtkcairoplot/gtkcairoplotmodel.c,
+  src/gtkcairoplot/gtkcairoplotmodel.h, src/gtkcairoplot/gtkcairoplotview.c,
+  src/gtkcairoplot/gtkcairoplotview.h, src/plot.c: Replaced GtkCairoPlot with
+  GPlot.  This is the first fase of the port. Not all functionalities was done
+  yet. 
+  darcs-hash:20060411225912-7ae4f-f0f96d3499a709611bf1193267b0956350879dc0.gz
+
+2006-03-03  Ricardo Markiewicz <rmarkie@fi.uba.ar>
+
+  * src/sheet/part-item.c: label's anchor improvement. 
+  darcs-hash:20060303041043-7ae4f-940a8f01681e13a729206b394084d7b36ac13d6b.gz
+
+2005-12-11  Ricardo Markiewicz <rmarkie@fi.uba.ar>
+
+  * src/gtkcairoplot/gtkcairoplotitems.c, src/gtkcairoplot/gtkcairoplotview.c,
+  src/plot.c: improvement of the plotting window. 
+  darcs-hash:20051211192922-7ae4f-431f1c47d8b72cf903c1316249520bae7255bd06.gz
+
+2005-12-05  Ricardo Markiewicz <rmarkie@fi.uba.ar>
+
+  * src/sheet/part-item.c: Improved anchor adjustment when flipping. 
+  darcs-hash:20051205173320-7ae4f-d06b5696a574bcc2555cf84f64cca730c3388258.gz
+
+2005-12-04  Ricardo Markiewicz <rmarkie@fi.uba.ar>
+
+  * src/dialogs/part-properties-dialog.glade2, src/sheet/part-item.c: Part
+  Property dialog renewed. 
+  darcs-hash:20051204172137-7ae4f-f57959d55327f9cac14e5e446e238e0dcdb7a9bd.gz
+
+2005-12-04  Ricardo Markiewicz <gazer.arg@gmail.com>
+
+  * src/model/wire.c, src/sheet/wire-item.c: Fix Wire's resizers rotation. 
+  darcs-hash:20051204053727-89280-abde78ed10682762d5f0a0798bdebebb0e14ea0b.gz
+
+2005-12-03  Ricardo Markiewicz <gazer.arg@gmail.com>
+
+  * src/schematic-view-ui.h, src/sheet/part-item.c: Fix flip code.  This patch
+  fix the buggy flipping code. It's not perfect but works reasonably. 
+  darcs-hash:20051203191528-89280-1f4ce4be0b9d741ba32b083c321904ecfa4a7204.gz
+
+2005-11-18  Ricardo Markiewicz <gazer.arg@gmail.com>
+
+  * src/schematic-view.c: Use the mouse wheel to change sheet's zoom. 
+  darcs-hash:20051118050020-89280-2dfbdaa42164726b2d6799730146d76eb6f3ff36.gz
+
+2005-11-08  Ricardo Markiewicz <rmarkie@fi.uba.ar>
+
+  * src/load-schematic.c, src/pspice2oregano.c, src/save-schematic.c,
+  src/xml-helper.c: Fix several compiler warnings.  This patch replace strcmp
+  by xmlStrcmp in XML functions to ensure properly UTF-8 management. Also add
+  BAD_CAST macro whenever is required to avoid that the compiler emit a
+  warning. 
+  darcs-hash:20051108163048-7ae4f-ce26201ddc9582360fe5acb9ac351f59002a2ca2.gz
+
+2005-11-07  Ricardo Markiewicz <gazer.arg@gmail.com>
+
+  * src/simulation.c: Checked if parser and engine exists before simulation is
+  made.  This patch close the bug #50. 
+  darcs-hash:20051107035647-89280-564bb9678c1f72acf6246b3306a37ec45df72681.gz
+
+2005-11-06  Ricardo Markiewicz <gazer.arg@gmail.com>
+
+  * src/model/Makefile.am, src/sheet/Makefile.am: Fix Makefile's 
+  darcs-hash:20051106222404-89280-e418b9ae203f0077e4d0b125f4f33984300ed1e9.gz
+
+2005-10-30  Ricardo Markiewicz <gazer.arg@gmail.com>
+
+  * src/model/schematic.c: Update schematic title after saving circuit.  This
+  close the bug #53. 
+  darcs-hash:20051030165646-89280-c9fe394b4b7d71b0d893bfc7adaea771d261993a.gz
+
+2005-10-23  Ricardo Markiewicz <gazer.arg@gmail.com>
+
+  * po/sv.po: Updated sv.po 
+  darcs-hash:20051023005036-89280-702df1c5362c74a181bce0be8176b88ab78b558b.gz
+
+2005-10-21  Ricardo Markiewicz <gazer.arg@gmail.com>
+
+  * src/schematic-view.c: HIG violation fix.  This patch close the bug #48 that
+  fix a HIG problem in the Save file dialog. Thanks to Gregory Leblanc
+  <headmaster.albus.dumbledore@gmail.com> for this patch. 
+  darcs-hash:20051021010430-89280-f350d0b9801ac3c8fa5cd92f81e8d7c5454359af.gz
+
+2005-10-19  Ricardo Markiewicz <rmarkie@fi.uba.ar>
+
+  * src/sheet/sheet-item.c: Placing more than 1 component on the schematic. 
+  This close the bug #52. To add more than one component you should hold
+  control down and then place.  I don't implement as Seth Nickell and Gregory
+  Leblanc suggests, because there is no way to know if you click in a non-blank
+  area (Not without looking for in all the list of components). 
+  darcs-hash:20051019191103-7ae4f-9bc0823dc30c6778f86c35a33e1a324a15e0601f.gz
+
+  * src/part-browser.c: Typing in a component name and pressing 'enter' allow
+  to add the first match in schematic.  This patch fix the bug #51 [1] 
+  darcs-hash:20051019175150-7ae4f-6db96848525a19ddf58ce62d28e27c58e98e079b.gz
+
+2005-10-18  Ricardo Markiewicz <rmarkie@fi.uba.ar>
+
+  * src/gtkcairoplot/Makefile.am: Missing Makefile.am 
+  darcs-hash:20051018175156-7ae4f-a9340f9491d04a2fbf399f79ec2e10c002e5a062.gz
+
+  * po/ChangeLog, po/fr.po, po/pl.po: Translations Update. 
+  darcs-hash:20051018173713-7ae4f-5eb6c60c49a3e3e1fb4b0086b007f24405b319b7.gz
+
+2005-10-17  oregano <>
+
+  * src/part-browser.c, src/simulate.c: Fixing typos and warning messages 
+  darcs-hash:20051017170651-fda0d-d3c32e392b54a4877825b703ea1cf36277518f33.gz
+
+2005-09-03  oregano <>
+
+  * src/schematic-view.c: Added a couple of comments. 
+  darcs-hash:20050903161952-fda0d-89ddb5d503b1ab7e6cba1d00341532a9dfe9e8fe.gz
+
+2005-10-17  Ricardo Markiewicz <rmarkie@fi.uba.ar>
+
+  * ChangeLog, configure.in, po/POTFILES.in, src/Makefile.am, src/grid.c,
+  src/grid.h, src/gtkcairoplot.c, src/gtkcairoplot.h,
+  src/gtkcairoplot/ChangeLog, src/gtkcairoplot/gtkcairoplot.c,
+  src/gtkcairoplot/gtkcairoplot.h, src/gtkcairoplot/gtkcairoplotitems.c,
+  src/gtkcairoplot/gtkcairoplotitems.h, src/gtkcairoplot/gtkcairoplotmodel.c,
+  src/gtkcairoplot/gtkcairoplotmodel.h, src/gtkcairoplot/gtkcairoplotview.c,
+  src/gtkcairoplot/gtkcairoplotview.h, src/gtkcairoplotitems.c,
+  src/gtkcairoplotitems.h, src/gtkcairoplotmodel.c, src/gtkcairoplotmodel.h,
+  src/gtkcairoplotview.c, src/gtkcairoplotview.h, src/item-data.c,
+  src/item-data.h, src/model/ChangeLog, src/model/Makefile.am,
+  src/model/item-data.c, src/model/item-data.h, src/model/node-store.c,
+  src/model/node-store.h, src/model/node.c, src/model/node.h,
+  src/model/part-label.h, src/model/part-private.h, src/model/part-property.c,
+  src/model/part-property.h, src/model/part.c, src/model/part.h,
+  src/model/schematic.c, src/model/schematic.h, src/model/sheet-pos.h,
+  src/model/textbox.c, src/model/textbox.h, src/model/wire-private.h,
+  src/model/wire.c, src/model/wire.h, src/node-item.c, src/node-item.h,
+  src/node-store.c, src/node-store.h, src/node.c, src/node.h, src/part-item.c,
+  src/part-item.h, src/part-label.h, src/part-private.h, src/part-property.c,
+  src/part-property.h, src/part.c, src/part.h, src/schematic.c,
+  src/schematic.h, src/sheet-item-factory.c, src/sheet-item-factory.h,
+  src/sheet-item.c, src/sheet-item.h, src/sheet-pos.h, src/sheet-private.h,
+  src/sheet.c, src/sheet.h, src/sheet/ChangeLog, src/sheet/Makefile.am,
+  src/sheet/grid.c, src/sheet/grid.h, src/sheet/node-item.c,
+  src/sheet/node-item.h, src/sheet/part-item.c, src/sheet/part-item.h,
+  src/sheet/sheet-item-factory.c, src/sheet/sheet-item-factory.h,
+  src/sheet/sheet-item.c, src/sheet/sheet-item.h, src/sheet/sheet-private.h,
+  src/sheet/sheet.c, src/sheet/sheet.h, src/sheet/textbox-item.c,
+  src/sheet/textbox-item.h, src/sheet/wire-item.c, src/sheet/wire-item.h,
+  src/textbox-item.c, src/textbox-item.h, src/textbox.c, src/textbox.h,
+  src/wire-item.c, src/wire-item.h, src/wire-private.h, src/wire.c, src/wire.h:
+  Reorganize source Tree. 
+  darcs-hash:20051017163133-7ae4f-2bf9fe5af3038f8ca04886ad1cd972a72b263e7f.gz
+
+2005-09-12  Ricardo Markiewicz <gazer.arg@gmail.com>
+
+  * ChangeLog, src/wire-item.c, src/wire-item.h, src/wire-private.h,
+  src/wire.c, src/wire.h: Added the possibility of changing the wire's size. 
+  This add the ability to change wire's size. To do this we add a small
+  rectangle on the corners when it is selected, and you can drag from there. 
+  darcs-hash:20050912010600-89280-8a90fefe7e17b73580eee6db3db08c0e24dff88a.gz
+
+2005-09-08  oregano <>
+
+  * po/ru.po: Re-updated ru.po with complete translation 
+  darcs-hash:20050908160607-fda0d-28211c95169b110c0aef7f82a349850bbddae1a0.gz
+
+2005-09-07  oregano <>
+
+  * po/ru.po: Updated and completed ru.po 
+  darcs-hash:20050907023152-fda0d-e27bdae0726120963cbd5b8dc410f9e66567dba9.gz
+
+2005-09-03  oregano <>
+
+  * src/simulate.c: Fixed the text of the temporary file warning. 
+  darcs-hash:20050903171402-fda0d-c15c34790ecb2fcebc348c508e22c4f23cd44672.gz
+
+  * po/sv.po: Updated sv.po 
+  darcs-hash:20050903170148-fda0d-4b2eb19f54c035f201a9b7eae4197cad8a872469.gz
+
+  * po/ru.po: Updated ru.po 
+  darcs-hash:20050903170041-fda0d-a036d7ec5f8b30b8ffce4af18049c82404748b20.gz
+
+  * po/ro.po: Updated ro.po 
+  darcs-hash:20050903170010-fda0d-cbc436df05db49909b1751a1e96ba47751ddb0bd.gz
+
+  * po/pt_BR.po: Updated pt_BR.po 
+  darcs-hash:20050903165833-fda0d-fb1934f816e48da95111599318049f8335d1969c.gz
+
+  * po/ja.po: Updated ja.po 
+  darcs-hash:20050903165649-fda0d-285c1944436ff6f3a69d45f84aeb535e6b148979.gz
+
+  * po/it.po: Updated it.po 
+  darcs-hash:20050903165610-fda0d-397b4008bbacc7b0aa288587b5fd48a50a9fac87.gz
+
+  * po/fr.po: Updated fr.po 
+  darcs-hash:20050903165519-fda0d-83289c267ac832bd9c88ea891d2e5a1d8d822af2.gz
+
+  * po/de.po: Updated de.po 
+  darcs-hash:20050903165307-fda0d-f03e95d2638b6ed9a8877610ef3f807a2af828b5.gz
+
+  * po/es.po: Updated and fixed es.po 
+  darcs-hash:20050903164953-fda0d-a9f37c0878e4c26236ab1ddecada0430cb099dbb.gz
+
+  * po/ca.po: Updated ca.po 
+  darcs-hash:20050903164829-fda0d-8e3d1a7e3fa07e56f7acfb103567dd7d5b1aa5e7.gz
+
+  * po/POTFILES.in: Added simulate.c to the POTFILES 
+  darcs-hash:20050903162241-fda0d-ea028e218a39bdfddddc640056ab13aa75df8790.gz
+
+2005-09-03  Ricardo Markiewicz <gazer.arg@gmail.com>
+
+  * src/netlist-editor.c: Fix return value 
+  darcs-hash:20050903190226-89280-8d6e70991a8f29a8a48847e723710430c6a58560.gz
+
+  * po/de.po: Update de.po 
+  darcs-hash:20050903163108-89280-31e8311194bef37e64e5c69a374cca83b3c92aa2.gz
+
+  * po/ca.po: Update ca.po 
+  darcs-hash:20050903162910-89280-913b449b820821048720103449151acbddbe0cf9.gz
+
+2005-08-27  oregano <>
+
+  * src/settings.c: Allow for gettext to work on the user preferences dialog. 
+  darcs-hash:20050827181712-fda0d-7e841efd3e5f46b28b39362344003f99ec641901.gz
+
+  * po/sv.po: Updated sv.po 
+  darcs-hash:20050827175242-fda0d-94e5282ca49264baa0f57acea5e070d935535234.gz
+
+  * po/ru.po: Updated ru.po 
+  darcs-hash:20050827175226-fda0d-2ff0318e5630e984af13871cdee909fa85dd1b5c.gz
+
+  * po/ro.po: Updated ro.po 
+  darcs-hash:20050827175205-fda0d-cf2efed23076e48e51a30dba7c2967508190871b.gz
+
+  * po/pt_BR.po: Updated pt_BR.po 
+  darcs-hash:20050827175103-fda0d-6a6053b51cc80ebd005fb6f916756ea0512bd5c5.gz
+
+  * po/ja.po: Updated ja.po 
+  darcs-hash:20050827174945-fda0d-a823319ded3f5d1998ea873bb6e83a8042b6131e.gz
+
+  * po/it.po: Updated it.po 
+  darcs-hash:20050827174922-fda0d-09caf8fea89389920565a6018ba3cd4de469d76f.gz
+
+  * po/fr.po: Updated fr.po 
+  darcs-hash:20050827174806-fda0d-92b7236c781cfd1969ee5300b1a4738fab4accc6.gz
+
+  * po/de.po: Updated de.po 
+  darcs-hash:20050827174641-fda0d-ac2da594b8529aec3bb266a39d828941c8beb80b.gz
+
+  * po/ca.po: Updated ca.po 
+  darcs-hash:20050827174617-fda0d-bea2c6f39319a518b85a4b39cf0b8d4724f82978.gz
+
+  * po/es.po: Updated es.po 
+  darcs-hash:20050827174310-fda0d-b188807827298bb91f81c5290833aa6ca9753b30.gz
+
+  * src/netlist-editor.c, src/part-browser.c, src/part-item.c, src/plot.c,
+  src/schematic-view.c, src/settings.c, src/sim-settings.c: Added a missing dot
+  at the end of the error message. 
+  darcs-hash:20050827173935-fda0d-924ff5b5b5efc46ffe8ce26ac61214cac5f827d4.gz
+
+  * po/ca.po: Fixed UTF mistake in ca.po 
+  darcs-hash:20050827171046-fda0d-41254a8125c6f4384ccdf70128a156fb52ab6b16.gz
+
+2005-08-26  oregano <>
+
+  * po/sv.po: Updated sv.po 
+  darcs-hash:20050826192723-fda0d-88bbaa9f4a3eab663f7fe9989e9d60affe0fccc6.gz
+
+  * po/ru.po: Updated ru.po 
+  darcs-hash:20050826192524-fda0d-ec8de7ef2a4b43dcc80ab1442a6b4047a042c628.gz
+
+  * po/ro.po: Updated ro.po 
+  darcs-hash:20050826192506-fda0d-f7880a13aebee0cb59eeda901451ea727777dac8.gz
+
+  * po/ja.po: Updated ja.po 
+  darcs-hash:20050826192127-fda0d-0f83803c0907c54b64a5e92085c17b8a435d80ae.gz
+
+  * po/it.po: Updated and fixed Italian tranlation 
+  darcs-hash:20050826192039-fda0d-2b3e76bb61d4f0857ef84a61bf6c09fc905ddb22.gz
+
+  * po/de.po: Fixed and updated German translation 
+  darcs-hash:20050826191438-fda0d-7d8ec881645f7db184854bd161a674cb215464bc.gz
+
+  * po/fr.po: Updated and fixed French translation 
+  darcs-hash:20050826190951-fda0d-6a09b5ee14535cd153a7b202d676cfe148f2477b.gz
+
+  * po/pt_BR.po: Fixed and updated Brazilean translation 
+  darcs-hash:20050826183845-fda0d-08324dc83a039b77ea10515e862622b1e797b826.gz
+
+  * po/ca.po: Fixed and updated catal[_\e0_] translation 
+  darcs-hash:20050826175426-fda0d-8923c684f221496fc3b84551846cb2eaefaf1530.gz
+
+  * po/es.po: Fix and update Spanish translation. 
+  darcs-hash:20050826165425-fda0d-49db60e063ed14a4e8133f70a2233158e1d0d4df.gz
+
+2005-08-26  Ricardo Markiewicz rmarkie@fi.uba.ar <>
+
+  * src/dialogs.c: Fix coding style 
+  darcs-hash:20050826174314-6d5eb-abeb1dc8a069f671befd6a529e0b72e573d8b64f.gz
+
+  * src/dialogs.c: Fix string manipulation 
+  darcs-hash:20050826174246-6d5eb-289465fc56626710b9aa751e115831dea08cfea2.gz
+
+2005-08-26  oregano <>
+
+  * src/dialogs.c, src/dialogs.h, src/dialogs/plot-window.glade2,
+  src/netlist-editor.c, src/oregano-config.c, src/part-browser.c,
+  src/part-item.c, src/plot-add-function.c, src/plot.c, src/schematic-view.c,
+  src/schematic.c, src/settings.c, src/sim-settings.c, src/simulate.c,
+  src/simulation.c, src/textbox-item.c: Fixed dialogs so that they are much
+  more homogeneous and HIG complient. 
+  darcs-hash:20050826132331-fda0d-71c132aadce86fd1bf458eae269450a2ea5238e7.gz
+
+2005-08-24  Ricardo Markiewicz <gazer.arg@gmail.com>
+
+  * src/plot.c: change in the behavior of plot selection 
+  darcs-hash:20050824040047-89280-ee64f52efb43ce44f28c28580a93f4a8284b3cdc.gz
+
+  * src/gtkcairoplotmodel.c: emit "changed" signal when clearing PlotModel 
+  darcs-hash:20050824035623-89280-c233cbe0b947a12d4ba7daae7f7eea4e10489f88.gz
+
+2005-08-16  oregano <>
+
+  * po/de.po: Fixed de.po 
+  darcs-hash:20050816204333-fda0d-0eb5f5fe37a152f80613d0dd11387c440a0b21ad.gz
+
+  * po/ca.po: Fixed ca.po a little bit 
+  darcs-hash:20050816203752-fda0d-97702f78c82a83611df480f13c59eb4009726732.gz
+
+  * src/netlist-editor.c, src/schematic-view.c: Fixed typo 
+  darcs-hash:20050816205223-fda0d-6523bd29e97267bb41f2f55e026a30b356e68936.gz
+
+  * po/es.po: Fixed the Spanish translation (taking over) 
+  darcs-hash:20050816205108-fda0d-d606e77ffac4b9aea254beb5bb6d39e7fa888796.gz
+
+  * po/sv.po: Updated sv.po with libtool 
+  darcs-hash:20050816203230-fda0d-d210e6b08ebad1259de67f2483d16b7f90045d9c.gz
+
+  * po/ru.po: Updated ru.po with libtool 
+  darcs-hash:20050816203213-fda0d-7b28175b07c2c68f75a3e5f02519d34df60c4100.gz
+
+  * po/ro.po: Updated ro.po with libtool 
+  darcs-hash:20050816203150-fda0d-2a7e673a71e7bd77432404c4fd02cee67c41173a.gz
+
+  * po/pt_BR.po: Updated pt_BR.po with libtool 
+  darcs-hash:20050816203052-fda0d-a2a39f7f53717e9431bc732a3df187d8959637dd.gz
+
+  * po/ja.po: Updated ja.po with libtool 
+  darcs-hash:20050816203029-fda0d-f7eccf4fe2553177a8255e2343f442d4f1d7c0d2.gz
+
+  * po/it.po: Updated it.po with libtool 
+  darcs-hash:20050816203008-fda0d-f469347d5eca358d25c62a72c6dbd9486d5bc29e.gz
+
+  * po/fr.po: Updated fr.po with libtool 
+  darcs-hash:20050816202945-fda0d-4803dece5e1f59485d8a978ffad4da2b2a2b2448.gz
+
+  * po/es.po: Updated and completed es.po 
+  darcs-hash:20050816202925-fda0d-b42991c19c2a03106b0c295ea9960b1575ae1504.gz
+
+  * po/de.po: Updated de.po with libtool 
+  darcs-hash:20050816202901-fda0d-caf8eee91f3309155dc498a47c753fbf1b4e6b0e.gz
+
+  * po/ca.po: Updated ca.po with libtool 
+  darcs-hash:20050816202831-fda0d-4d86fd39bc316851845d918647e34cb4f0be282d.gz
+
+  * src/plot.c: Fix typo in "Add function" description. 
+  darcs-hash:20050816144431-fda0d-917a2a1055eaa7321a0f3f5515ead68886a54c04.gz
+
+  * src/dialogs/clamp-properties-dialog.glade2,
+  src/dialogs/page-properties.glade2, src/dialogs/plot-window.glade2: Mark
+  non-translatable strings 
+  darcs-hash:20050816144055-fda0d-0bfaf04f258a621179893b9549176414f112a13b.gz
+
+  * src/plot.c: Fix the English message when no simulation data is produced. 
+  darcs-hash:20050816143345-fda0d-f727d2aebf4b8f56dc9a333c3b14e349cf6d3ddd.gz
+
+  * src/sim-settings.c: Fix "sapn" -> "span" typo. 
+  darcs-hash:20050816143118-fda0d-a46513db8bf8c7127e689222a100f77a6838ab22.gz
+
+  * po/es.po: Fix typo in Spanish translation. 
+  darcs-hash:20050816142959-fda0d-07e28eff711a28d2736120dfce721f9db70a05c5.gz
+
+  * po/es.po: Update Spanish translation 
+  darcs-hash:20050816142850-fda0d-3363e47ef0c2ae642e2786b486749798004d349a.gz
+
+2005-08-08  Ricardo Markiewicz <gazer.arg@gmail.com>
+
+  * configure.in: New Release 0.40.5 
+  darcs-hash:20050808031526-89280-2f928a0df2a094815a7009f50fb97eb5a803f821.gz
+
+  * src/file-manager.h, src/save-schematic.c, src/save-schematic.h,
+  src/schematic-view.c, src/schematic.c: Add error reporting to save functions 
+  darcs-hash:20050808025527-89280-2b08620352869b2ce334653579936ec9a1083699.gz
+
+2005-08-04  Ricardo Markiewicz <gazer.arg@gmail.com>
+
+  * src/errors.h, src/file-manager.h, src/load-schematic.c,
+  src/load-schematic.h, src/schematic.c: Add error reporting to file load
+  functions 
+  darcs-hash:20050804190821-89280-736a4a4d0caa0292c84eb9a98be9b331027772a4.gz
+
+2005-08-03  Ricardo Markiewicz <gazer.arg@gmail.com>
+
+  * src/Makefile.am, src/dialogs.c, src/errors.c, src/errors.h,
+  src/file-manager.c, src/file-manager.h, src/file.c, src/main.c,
+  src/netlist-editor.c, src/save-schematic.c, src/save-schematic.h,
+  src/schematic-view.c, src/schematic.c, src/schematic.h, src/simulate.c,
+  src/simulate.h: Add FileManager and Error handling 
+  darcs-hash:20050803182116-89280-073d2605743e46e0a625c099f7ad95c5cfdf8e82.gz
+
+2005-07-18  Ricardo Markiewicz <gazer.arg@gmail.com>
+
+  * src/Makefile.am, src/dialogs/Makefile.am,
+  src/dialogs/plot-add-function.glade2, src/gtkcairoplot.c,
+  src/gtkcairoplotitems.c, src/gtkcairoplotitems.h, src/plot-add-function.c,
+  src/plot-add-function.h, src/plot.c, src/sim-engine.c, src/sim-engine.h: Add
+  plot functions 
+  darcs-hash:20050718163756-89280-f9d54fd7bbfa4d10dde3e7b4d8d3b1795764fca4.gz
+
+2005-07-15  Ricardo Markiewicz <gazer.arg@gmail.com>
+
+  * configure.in, src/gtkcairoplotitems.c, src/gtkcairoplotview.c: add cairo
+  0.5 support 
+  darcs-hash:20050715190833-89280-d1fc0d3a25c7cc33c0c8207564ea7c1060a6f4e6.gz
+
+2005-07-13  Ricardo Markiewicz <gazer.arg@gmail.com>
+
+  * src/gtkcairoplotmodel.c: fix min and max initial values in
+  GtkCairoPlotModel 
+  darcs-hash:20050713072112-89280-ec4abe3fe11b7a0298473433e7d3a356b8e57e1f.gz
+
+2005-07-09  Ricardo Markiewicz <gazer.arg@gmail.com>
+
+  * src/gtkcairoplotmodel.c: Reset max and min values 
+  darcs-hash:20050709205145-89280-a38cf242c41348203dc37aa9e5830009f4b3648f.gz
+
+2005-07-03  Ricardo Markiewicz <gazer.arg@gmail.com>
+
+  * src/gtkcairoplotitems.c: Fix axis drawing 
+  darcs-hash:20050703231649-89280-bf8f87afacadc5eb0e95590828728a50a1345010.gz
+
+  * src/plot.c, src/sim-engine.c: Improved axis units detection 
+  darcs-hash:20050703013237-89280-cbd38f2c14d9e509b8e51dea7b735d197f18f650.gz
+
+2005-06-26  Ricardo Markiewicz <gazer.arg@gmail.com>
+
+  * src/simulate.c: Fix netlist options generation 
+  darcs-hash:20050626064101-89280-8ff3a38d779e4c8fcace8e3bf9a574bffe1d6f51.gz
+
+  * src/sim-settings.c: Add callback to new button 
+  darcs-hash:20050626064010-89280-d92124aa6a2eb51000778fd7ce4a4605e761dae9.gz
+
+  * src/dialogs/sim-settings.glade2: Fix new button name 
+  darcs-hash:20050626063714-89280-48aa7d1682e5399940ad9ce45c54916af936deb3.gz
+
+  * src/dialogs/sim-settings.glade2: Add New Option button 
+  darcs-hash:20050626060047-89280-1d6acecdd091a1d8bd247dca688286e026a46b9d.gz
+
+  * src/sim-settings.c: Load schematics options if available 
+  darcs-hash:20050626050549-89280-4d23181ca69195f76a7741ac90c1cfb45a469e49.gz
+
+2005-06-17  Ricardo Markiewicz <gazer.arg@gmail.com>
+
+  * po/sv.po: Update sv translation file 
+  darcs-hash:20050617163759-89280-47b4db37d149b25ed473f906fb8607fedffa2340.gz
+
+  * po/ru.po: Update ru translation file 
+  darcs-hash:20050617163744-89280-41b6ac354955aba9c86502e93d1a0e0fce55e3bb.gz
+
+  * po/ro.po: Update ro translation file 
+  darcs-hash:20050617163722-89280-3fdf998094730b3e3c3cbca44d8f73160c1cd37e.gz
+
+  * po/pt_BR.po: Update pt_BR translation file 
+  darcs-hash:20050617163658-89280-f524dc4d3226ec968daf628394142f1bf73342ca.gz
+
+  * po/ja.po: Update ja translation file 
+  darcs-hash:20050617163632-89280-d5a2a1200be9adefae0f7ca05584057cb02964f2.gz
+
+  * po/it.po: Update it translation file 
+  darcs-hash:20050617163538-89280-25223e9c073d76cb8b8938a18f9c0817c87f338d.gz
+
+  * po/fr.po: Update fr translation file 
+  darcs-hash:20050617162155-89280-b28d23d4f4b5892ecad92c93d7cbcc156a3665fc.gz
+
+  * po/es.po: Update es translation file 
+  darcs-hash:20050617155339-89280-aba9bfe12fff4eda4520cd8652721525105bfe3a.gz
+
+  * po/de.po: Update de translation file 
+  darcs-hash:20050617155242-89280-a67332fbb5bb0b19db29b0b7d2bc3981b6f2fe57.gz
+
+  * po/ca.po: Update ca translation file 
+  darcs-hash:20050617154522-89280-f9167d8166a60121b7c7b519520e18ab388ed224.gz
+
+2005-06-17  oregano <>
+
+  * po/de.po: Fixing German Translations 
+  darcs-hash:20050617144830-fda0d-b0ceee17caae9b82dc0e5546612ef939edde7f43.gz
+
+2005-06-15  oregano <>
+
+  * src/dialogs/part-properties-dialog.glade2, src/dialogs/plot-window.glade2,
+  src/dialogs/properties.glade2, src/dialogs/settings.glade2,
+  src/dialogs/sim-settings.glade2, src/dialogs/splash.glade2,
+  src/dialogs/textbox-properties-dialog.glade2: Fix strings that shouldn't be
+  translated. 
+  darcs-hash:20050615153342-fda0d-dcb70a5f24dfc23e7c9d2d8478d255a10ccccc9d.gz
+
+2005-06-17  Ricardo Markiewicz <gazer.arg@gmail.com>
+
+  * src/sim-engine.c: fix engine kill 
+  darcs-hash:20050617001744-89280-9ea4827a6f7b209be24df425e92f5dcbf27e3e83.gz
+
+2005-06-15  Ricardo Markiewicz <gazer.arg@gmail.com>
+
+  * src/simulation.c: fix typo 
+  darcs-hash:20050615214244-89280-40542e08f40f67b66938110c25ee330eb88443a3.gz
+
+  * src/simulation.c: Fix cancel simulation handler 
+  darcs-hash:20050615200751-89280-90a83a0b230af22883e8c8f84f070e67ff3172f6.gz
+
+2005-06-09  Ricardo Markiewicz <gazer.arg@gmail.com>
+
+  * src/part-property.c: IA64 fix 
+  darcs-hash:20050609005133-89280-309cb283900dc057218a853369b33097469d5692.gz
+
+2005-06-09  maxy <>
+
+  * Makefile.am: destdir-fix 
+  darcs-hash:20050609002526-e47e8-bdb93f9659f89d817b29630cbfcb839f47d16f4f.gz
+
+2005-06-08  Ricardo Markiewicz <gazer.arg@gmail.com>
+
+  * src/plot.c: Remove unused code 
+  darcs-hash:20050608032347-89280-7f51d36ad32f825328acf5fbd24dc84aa876118b.gz
+
+2005-05-29  Ricardo Markiewicz <gazer.arg@gmail.com>
+
+  * configure.in: Fix cairo version detection 
+  darcs-hash:20050529171542-89280-ca1dc16707df1ea21e70140dd113295bb8490459.gz
+
+2005-05-27  Ricardo Markiewicz <gazer.arg@gmail.com>
+
+  * import from cvs version 0.40.4 
+  darcs-hash:20050527185944-89280-d4a6316817d333d70c686d3e0ed97c7619cd6f43.gz

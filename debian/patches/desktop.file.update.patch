@@ -1,0 +1,21 @@
+Author: Maximiliano Curia <maxy@debian.org>
+Description: Update categories and name of desktop file
+--- a/oregano.desktop
++++ b/oregano.desktop
+@@ -1,8 +1,6 @@
+ [Desktop Entry]
+ Encoding=UTF-8
+-Name=Oregano electrical engineering tool
+-Name[ca]=Eina d'enginyeria elèctrica Oregano
+-Name[es]=Oregano, herramienta para la ingeniería electrónica
++Name=Oregano
+ GenericName=Electrical engineering tool
+ GenericName[ca]=Eina d'enginyeria elèctrica
+ GenericName[es]=Herramienta para la ingeniería electrónica
+@@ -17,5 +15,5 @@
+ StartupNotify=true
+ Terminal=false
+ Type=Application
+-Categories=GNOME;GTK;Science;Education;Physics;
++Categories=GNOME;GTK;Science;Education;Electronics;
+ MimeType=application/x-oregano;

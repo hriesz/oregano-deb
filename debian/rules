@@ -1,0 +1,27 @@
+#!/usr/bin/make -f
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+#export DH_OPTIONS=-v
+
+CFLAGS = -Wall -g
+LDFLAGS = -Wl,-z,defs -Wl,--as-needed
+
+ifneq (,$(findstring noopt,$(DEB_BUILD_OPTIONS)))
+	CFLAGS += -O0
+else
+	CFLAGS += -O2 -fno-omit-frame-pointer
+endif
+
+%:
+	dh  $@
+
+override_dh_auto_build:
+	CFLAGS="$(CFLAGS)" LDFLAGS="$(LDFLAGS)" scons RunUpdateMimeDatabase=no PREFIX=/usr
+
+override_dh_auto_clean:
+	-scons PREFIX=/usr -c
+	-rm -rf .sconf_temp
+
+override_dh_auto_install:
+	CFLAGS="$(CFLAGS)" LDFLAGS="$(LDFLAGS)" scons RunUpdateMimeDatabase=no PREFIX=/usr DESTDIR=$(CURDIR)/debian/oregano/ install
+

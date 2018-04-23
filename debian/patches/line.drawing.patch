@@ -1,0 +1,20 @@
+## Description: When moving a wire so that it joins with another delete the moved one, as well as extending the other.
+## Origin/Author: Fole
+## Bug: https://bugs.edge.launchpad.net/ubuntu/+source/oregano/+bug/60777
+Index: oregano-0.69.1/src/sheet/sheet-item.c
+===================================================================
+--- oregano-0.69.1.orig/src/sheet/sheet-item.c	2009-07-07 12:49:49.000000000 -0300
++++ oregano-0.69.1/src/sheet/sheet-item.c	2011-11-28 13:22:51.000000000 -0300
+@@ -507,7 +507,11 @@
+ 
+ 				item_data = SHEET_ITEM (list->data)->priv->data;
+ 				item_data_move (item_data, &delta);
+-				item_data_register (item_data);
++				if (item_data_register(item_data) == -1) {
++					/* Merged item needs to be deleted */
++					g_object_unref (G_OBJECT (item_data));
++					gtk_object_destroy(GTK_OBJECT(list->data));
++				}
+ 			}
+ 
+ 			break;
